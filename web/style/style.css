@@ -57,3 +57,24 @@
   width: 100px;
   height: 100px;
 }
+
+#infoQuiSom {
+  color: white;
+}
+
+#instalacionsServeis {
+  color: white;
+}
+
+#instalacionsServeisP {
+  width: 40%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#instalacionsServeisP p {
+  margin: 10px;
+  border: 5px solid white;
+  padding: 10px;
+  text-align: right;
+}
