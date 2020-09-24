@@ -1,0 +1,41 @@
+#bodyIndex {
+  background-color: rgba(33, 34, 36, 255);
+  border-left: 20px solid rgba(0, 187, 180, 255);
+  border-bottom: 20px solid rgba(243, 213, 78, 255);
+  border-right: 20px solid rgba(243, 51, 63, 255);
+  margin-top: -125px;
+}
+
+#bodyQuiSom {
+  background-color: rgba(33, 34, 36, 255);
+  border-left: 20px solid rgba(0, 187, 180, 255);
+  border-bottom: 20px solid rgba(243, 213, 78, 255);
+  border-right: 20px solid rgba(243, 51, 63, 255);
+  margin-top: -125px;
+}
+
+#fletxaHome {
+  width: 300px;
+  height: 300px;
+}
+#monoHome {
+  width: 500px;
+}
+#clicaElMico {
+  font-family: "Caveat", cursive;
+  color: white;
+  margin-top: -10px;
+}
+
+.start {
+  display: flex;
+  flex-wrap: wrap;
+  width: 70%;
+  margin: auto;
+  margin-top: 10%;
+  align-items: center;
+}
+.fletxa {
+  display: flex;
+  flex-wrap: wrap;
+}
