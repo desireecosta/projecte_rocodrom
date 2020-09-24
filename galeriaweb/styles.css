@@ -1,20 +1,26 @@
 #container{
     background-color: rgb(21, 22, 23);
     margin: 0%;
+    display: flex;
+    flex-wrap: wrap;
+}
+#galeria{
+    margin: 4%;
 }
 #img1{
     width: 250px;
     height: 150px;
     border: 5px solid #bfbfbf;
-    position: relative;
 }
 #p1{
     color:#ffffff;
 }
+    
 #img2{
     width: 250px;
     height: 150px;
     border: 5px solid #bfbfbf;
+    
 }
 #p2{
     color: #ffffff
@@ -49,5 +55,37 @@
     border: 5px solid #bfbfbf;
 }
 #p6{
+    color: #ffffff;
+}
+#img7{
+    width:250px ;
+    height:150px ;
+    border: 5px solid #bfbfbf;
+}
+#p7{
+    color: #ffffff;
+}
+#img8{
+    width:250px ;
+    height: 150px;
+    border: 5px solid #bfbfbf;
+}
+#p8{
+    color: #ffffff;
+}
+#img9{
+    width: 130px;
+    height: 200px;
+    border: 5px solid #bfbfbf;
+}
+#p9{
+    color: #ffffff
+}
+#img10{
+    width: 250px;
+    height: 150px;
+    border: 5px solid #bfbfbf;
+}
+#p10{
     color: #ffffff;
 }
