@@ -1,0 +1,29 @@
+#container{
+    background-color: rgb(21, 22, 23)
+}
+#img1{
+    width: 250px;
+    height: 150px;
+    color:white;
+    border:5px solid #bfbfbf;
+  }
+  #img2{
+   width: 250px;
+   height: 150px;
+   border:5px solid #bfbfbf;
+  }
+  #img3{
+    width: 250px;
+    height: 150px;
+    border:5px solid #bfbfbf;
+  }
+  #img4{
+    width: 150px;
+    height: 250px;
+    border:5px solid #bfbfbf;
+  }
+  #img5{
+    width: ;
+    height: ;
+    border: ;
+  }
