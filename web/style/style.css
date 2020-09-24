@@ -39,23 +39,48 @@
   flex-wrap: wrap;
 }
 #menu {
-  background-color: white;
+  background-color: rgba(191, 191, 191, 255);
   width: 15%;
 }
 
 #nav {
   display: flex;
   flex-direction: column;
+  height: 60%;
 }
+
 #nav a {
   text-align: right;
   color: rgba(33, 34, 36, 255);
   text-decoration: none;
+  padding: 5%;
+  margin: 10px;
+}
+#nav .currentLink {
+  background-color: rgba(33, 34, 36, 255);
+  color: white;
 }
 
+/* LOGO I TEXT (CAL MICO ROCÒDROM GIRONA) CONTAINER */
+/* .logo {
+} */
+
+/* LOGO IMG */
 #logo {
   width: 100px;
   height: 100px;
+  margin-left: 25%;
+  margin-top: 10%;
+}
+
+#quiSomAll {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%;
+}
+#mainQuiSom {
+  width: 40%;
+  margin: 10px;
 }
 
 #infoQuiSom {
@@ -66,15 +91,43 @@
   color: white;
 }
 
+/* DIV DE LES P  */
 #instalacionsServeisP {
-  width: 40%;
+  height: 40%;
   display: flex;
   flex-wrap: wrap;
 }
-
+/* P DINS DEL DIV DE, NO CONFUNDIR!!!!! */
 #instalacionsServeisP p {
   margin: 10px;
   border: 5px solid white;
   padding: 10px;
   text-align: right;
 }
+#imatgesQuiSom {
+  display: flex;
+  flex-wrap: wrap;
+  width: 40%;
+}
+
+#imatgesQuiSom img {
+  margin: 10px auto;
+  border: 5px solid white;
+  max-width: 200px;
+}
+
+/* #idiomes {
+  display: flex;
+  flex-wrap: wrap;
+  height: 10%;
+}
+
+#selectorIdiomes {
+  padding-left: 1%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#selectorIdiomes p {
+  padding: 1%;
+} */
