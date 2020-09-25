@@ -1,0 +1,193 @@
+#bodyIndex {
+    background-color: rgb (#212223);
+    border-left: 20px solid rgba(#1ebbb3);
+    border-bottom: 20px solid rgba(#f2d45a);
+    border-right: 20px solid rgba(#f03645);
+    margin-top: -125px;
+  }
+  #bodyQuiSom,
+  #bodyTarifes,
+  #bodygaleria {
+    background-color: rgba(33, 34, 36, 255);
+    border-left: 20px solid rgba(0, 187, 180, 255);
+    border-bottom: 20px solid rgba(243, 213, 78, 255);
+    border-right: 20px solid rgba(243, 51, 63, 255);
+  }
+  #menu {
+    background-color: rgba(191, 191, 191, 255);
+    width: 15%;
+  }
+  
+  #nav {
+    display: flex;
+    flex-direction: column;
+    height: 60%;
+  }
+  
+  #nav a {
+    text-align: right;
+    color: rgba(33, 34, 36, 255);
+    text-decoration: none;
+    padding: 5%;
+    margin: 10px;
+  }
+  #nav .currentLink4 {
+    background-color: rgba(33, 34, 36, 255);
+    color: #ffffff;
+  }
+
+  #logo {
+    width: 100px;
+    height: 100px;
+    margin-left: 25%;
+    margin-top: 10%;
+  }
+  #galeriaAll {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+  }
+  /* DIV DE LES P  */
+  #instalacionsServeisP {
+    height: 40%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  /* P DINS DEL DIV DE, NO CONFUNDIR!!!!! */
+  #instalacionsServeisP p {
+    margin: 10px;
+    border: 5px solid white;
+    padding: 10px;
+    text-align: right;
+  }
+  #imatgesgaleria {
+    display: flex;
+    flex-wrap: wrap;
+    width: 40%;
+  }
+  
+  #imatgesgaleria img {
+    margin: 10px auto;
+    border: 5px solid white;
+    max-width: 200px;
+  }
+  
+#idiomes {
+    display: flex;
+    flex-wrap: wrap;
+    height: 10%;
+  }
+#selectorIdiomes {
+    padding-left: 1%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+#selectorIdiomes p {
+    padding: 1%;
+  }
+#container{
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+#galeria{
+    margin: 5%;
+}
+#img1{
+    width: 250px;
+    height: 150px;
+    border: 5px solid #bfbfbf;
+}
+#p1{
+    color:#ffffff;
+}
+    
+#img2{
+    width: 250px;
+    height: 150px;
+    border: 5px solid #bfbfbf;
+    
+}
+#p2{
+    color: #ffffff
+}
+#img3{
+    width: 250px;
+    height: 150px;
+    border: 5px solid #bfbfbf;
+}
+#p3{
+    color: #ffffff;
+}
+#img4{
+    width: 170px;
+    height: 250px;
+    border: 5px solid #bfbfbf;
+}
+#p4{
+    color: #ffffff;
+}
+#img5{
+    width: 190px;
+    height: 220px;
+    border: 5px solid #bfbfbf;
+}
+#p5{
+    color: #ffffff;
+}
+#img6{
+    width: 200px;
+    height: 150px;
+    border: 5px solid #bfbfbf;
+}
+#p6{
+    color: #ffffff;
+}
+#img7{
+    width:250px ;
+    height:150px ;
+    border: 5px solid #bfbfbf;
+}
+#p7{
+    color: #ffffff;
+}
+#img8{
+    width:250px ;
+    height: 150px;
+    border: 5px solid #bfbfbf;
+}
+#p8{
+    color: #ffffff;
+}
+#img9{
+    width: 130px;
+    height: 200px;
+    border: 5px solid #bfbfbf;
+}
+#p9{
+    color: #ffffff
+}
+#img10{
+    width: 250px;
+    height: 150px;
+    border: 5px solid #bfbfbf;
+}
+#p10{
+    color: #ffffff;
+}
+#img11{
+    width: 150px;
+    height: 250px;
+    border: 5px solid #bfbfbf;
+}
+#p11{
+    color: #ffffff;
+}
+#img12{
+    width: 180px;
+    height: 270px;
+    border: 5px solid #bfbfbf;
+}
+#p12{
+    color: #ffffff;
+}
