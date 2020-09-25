@@ -74,7 +74,8 @@
   margin-top: 10%;
 }
 
-#quiSomAll {
+#quiSomAll,
+#tarifesAll {
   display: flex;
   flex-wrap: wrap;
   height: 100%;
@@ -84,7 +85,8 @@
   margin: 10px;
 }
 
-#infoQuiSom {
+#infoQuiSom,
+#infoTarifes {
   color: white;
 }
 
@@ -114,21 +116,60 @@
 #imatgesQuiSom img {
   margin: 10px auto;
   border: 5px solid white;
-  max-width: 200px;
+  max-width: 150px;
+  max-height: 150px;
 }
 
 /* #idiomes {
   display: flex;
   flex-wrap: wrap;
   height: 10%;
+  width: 100%;
 }
 
 #selectorIdiomes {
   padding-left: 1%;
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 #selectorIdiomes p {
-  padding: 1%;
+  display: inline-block;
 } */
+
+#infoTarifes {
+  color: white;
+  margin: auto;
+  margin-top: 5%;
+}
+#infoTarifes div {
+}
+
+#horaris {
+  border: 5px solid white;
+  height: 150px;
+  width: 600px;
+  color: white;
+  text-align: center;
+}
+
+#tarifes {
+  height: 200px;
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+}
+#tarifes div div {
+  padding: 10%;
+}
+
+#tarifesNormals,
+#tarifesMesos {
+  text-align: center;
+}
+
+#tarifesNormals div,
+#tarifesMesos div {
+  border: 5px solid white;
+}
