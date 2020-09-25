@@ -7,7 +7,9 @@
 
 #bodyQuiSom,
 #bodyTarifes,
-#bodyActivitats {
+#bodyActivitats,
+#bodyContacte,
+#bodyGaleria {
   background-color: rgba(33, 34, 36, 255);
   border-left: 20px solid rgba(0, 187, 180, 255);
   border-bottom: 20px solid rgba(243, 213, 78, 255);
@@ -76,18 +78,28 @@
 
 #quiSomAll,
 #tarifesAll,
-#activitatsAll {
+#activitatsAll,
+#galeriaAll {
   display: flex;
   flex-wrap: wrap;
+  margin: auto;
   height: 100%;
 }
+/* #galeriaAll {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  height: 100%;
+} */
 #mainQuiSom {
   width: 40%;
   margin: 10px;
 }
 
 #infoQuiSom,
-#infoTarifes {
+#infoTarifes,
+#infoActivitats,
+#infoGaleria {
   color: white;
 }
 
@@ -104,7 +116,7 @@
 /* P DINS DEL DIV DE, NO CONFUNDIR!!!!! */
 #instalacionsServeisP p {
   margin: 10px;
-  border: 5px solid white;
+  border: 5px solid #bfbfbf;
   padding: 10px;
   text-align: right;
 }
@@ -116,7 +128,7 @@
 
 #imatgesQuiSom img {
   margin: 10px auto;
-  border: 5px solid white;
+  border: 5px solid #bfbfbf;
   max-width: 150px;
   max-height: 150px;
 }
@@ -139,16 +151,26 @@
   display: inline-block;
 } */
 
+/* #imatgesgaleria {
+  display: flex;
+  flex-wrap: wrap;
+  width: 40%;
+}
+
+#imatgesgaleria img {
+  margin: 10px auto;
+  border: 5px solid white;
+  max-width: 200px;
+} */
+
 #infoTarifes {
   color: white;
   margin: auto;
   margin-top: 5%;
 }
-#infoTarifes div {
-}
 
 #horaris {
-  border: 5px solid white;
+  border: 5px solid #bfbfbf;
   height: 150px;
   width: 600px;
   color: white;
@@ -172,5 +194,168 @@
 
 #tarifesNormals div,
 #tarifesMesos div {
-  border: 5px solid white;
+  border: 5px solid #bfbfbf;
+}
+
+#teles,
+#trapezzi,
+#escalada,
+#escaladaGrups {
+  border: 5px solid #bfbfbf;
+  width: 250px;
+  height: 250px;
+  margin: auto;
+  padding: 1%;
+}
+
+#activitats h1 {
+  color: white;
+}
+
+#infoActivitats {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1%;
+}
+
+.imatgeTeles,
+.imatgeTrapezzi,
+.imatgeEscalada,
+.imatgeEscaladaGrups {
+  border: 2px solid #bfbfbf;
+  width: 20px;
+  height: 20px;
+}
+
+#infoGaleria {
+  width: 70%;
+  margin: auto;
+}
+
+#container {
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  overflow-y: scroll;
+  height: 400px;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px white;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: white;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: white;
+}
+
+.galeria {
+  margin: 5%;
+}
+#img1 {
+  width: 250px;
+  height: 150px;
+  border: 5px solid #bfbfbf;
+}
+#p1 {
+  color: #ffffff;
+}
+
+#img2 {
+  width: 250px;
+  height: 150px;
+  border: 5px solid #bfbfbf;
+}
+#p2 {
+  color: #ffffff;
+}
+#img3 {
+  width: 250px;
+  height: 150px;
+  border: 5px solid #bfbfbf;
+}
+#p3 {
+  color: #ffffff;
+}
+#img4 {
+  width: 170px;
+  height: 250px;
+  border: 5px solid #bfbfbf;
+}
+#p4 {
+  color: #ffffff;
+}
+#img5 {
+  width: 190px;
+  height: 220px;
+  border: 5px solid #bfbfbf;
+}
+#p5 {
+  color: #ffffff;
+}
+#img6 {
+  width: 200px;
+  height: 150px;
+  border: 5px solid #bfbfbf;
+}
+#p6 {
+  color: #ffffff;
+}
+#img7 {
+  width: 250px;
+  height: 150px;
+  border: 5px solid #bfbfbf;
+}
+#p7 {
+  color: #ffffff;
+}
+#img8 {
+  width: 250px;
+  height: 150px;
+  border: 5px solid #bfbfbf;
+}
+#p8 {
+  color: #ffffff;
+}
+#img9 {
+  width: 130px;
+  height: 200px;
+  border: 5px solid #bfbfbf;
+}
+#p9 {
+  color: #ffffff;
+}
+#img10 {
+  width: 250px;
+  height: 150px;
+  border: 5px solid #bfbfbf;
+}
+#p10 {
+  color: #ffffff;
+}
+#img11 {
+  width: 150px;
+  height: 250px;
+  border: 5px solid #bfbfbf;
+}
+#p11 {
+  color: #ffffff;
+}
+#img12 {
+  width: 180px;
+  height: 270px;
+  border: 5px solid #bfbfbf;
+}
+#p12 {
+  color: #ffffff;
 }
