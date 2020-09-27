@@ -9,7 +9,8 @@
 #bodyTarifes,
 #bodyActivitats,
 #bodyContacte,
-#bodyGaleria {
+#bodyGaleria,
+#bodymerch {
   background-color: rgba(33, 34, 36, 255);
   border-left: 20px solid rgba(0, 187, 180, 255);
   border-bottom: 20px solid rgba(243, 213, 78, 255);
@@ -79,7 +80,8 @@
 #quiSomAll,
 #tarifesAll,
 #activitatsAll,
-#galeriaAll {
+#galeriaAll,
+#merchAll {
   display: flex;
   flex-wrap: wrap;
   margin: auto;
