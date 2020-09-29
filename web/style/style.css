@@ -5,12 +5,7 @@
   border-right: 20px solid rgba(243, 51, 63, 255);
 }
 
-#bodyQuiSom,
-#bodyTarifes,
-#bodyActivitats,
-#bodyContacte,
-#bodygaleria,
-#bodymerch {
+body {
   background-color: rgba(33, 34, 36, 255);
   border-left: 20px solid rgba(0, 187, 180, 255);
   border-bottom: 20px solid rgba(243, 213, 78, 255);
