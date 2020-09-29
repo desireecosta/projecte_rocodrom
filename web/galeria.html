@@ -1,92 +1,110 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-      <link rel="stylesheet" type="text/css" href="../web/style/style.css">
+    <link rel="stylesheet" type="text/css" href="../web/style/style.css" />
     <title>Galeria</title>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.js"
+      integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"
+      integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30="
+      crossorigin="anonymous"
+    ></script>
   </head>
-    <body id="bodygaleria">
-      <div class="galeria">
-        <div id="galeriaAll">
-          <div id="menu">
-            <div class="logo">
-              <img id="logo" src="../img/monoMenu.svg" alt="" />
-              <h4>CAL MICO</h4>
-              <p>Rocòdrom Girona</p>
-            </div>
+  <body>
+    <div id="galeriaAll">
+      <div id="menu">
+        <div class="logo">
+          <img id="logo" src="../img/monoMenu.svg" alt="" />
+          <h4>CAL MICO</h4>
+          <p>Rocòdrom Girona</p>
+        </div>
 
         <nav id="nav">
-          <a class="currentLink" href="./quiSom.html">Qui som</a>
+          <a href="./quiSom.html">Qui som</a>
           <a href="">Equipació actual</a>
-          <a href="">Activitats</a>
-          <a href="">Tarifes</a>
-          <a class="currentLink4" href="./galeria.html">Galeria</a>
+          <a href="./activitats.html">Activitats</a>
+          <a href="./tarifes.html">Tarifes</a>
+          <a class="currentLink" href="./galeria.html">Galeria</a>
           <a href="./merch.html">Merch</a>
-          <a href="">Contacte</a>
+          <a href="./contacte.html">Contacte</a>
         </nav>
-      
-          <div id="idiomes">
-            <p>IDIOMES</p>
-              <div id="selectorIdiomes">
-                <p>EN</p>
-                <p>ES</p>
-                <p>CA</p>
-                <p>FR</p>
-              </div>
-            </div> 
+
+        <!-- <div id="idiomes">
+          <p>IDIOMES</p>
+          <div id="selectorIdiomes">
+            <p>EN</p>
+            <p>ES</p>
+            <p>CA</p>
+            <p>FR</p>
+          </div>
+        </div> -->
+      </div>
+      <div id="infoGaleria">
+        <h1>Galeria | Micos pel món</h1>
+        <div id="galeriaContainer">
+          <div class="galeriaImatge">
+            <img src="../img/madagascar.mico.jpeg" /><br />
+            <p>Madagascar</p>
+            <br />
+          </div>
+          <div class="galeriaImatge">
+            <img src="../img/eurodisney.mico.jpeg" /><br />
+            <p>Eurodisney</p>
+            <br />
+          </div>
+          <div class="galeriaImatge">
+            <img src="../img/dolomitas.mico.jpeg" /><br />
+            <p>Dolomitas</p>
+            <br />
+          </div>
+          <div class="galeriaImatge">
+            <img src="../img/nepal.mico.jpeg" /><br />
+            <p>Nepal</p>
+          </div>
+          <div class="galeriaImatge">
+            <img src="../img/noruega.mico.jpeg" /><br />
+            <p>Noruega</p>
+          </div>
+          <div class="galeriaImatge">
+            <img src="../img/taliandia.mico.jpeg" /><br />
+            <p>Taliandia</p>
+          </div>
+          <div class="galeriaImatge">
+            <img src="../img/peru.mico.jpeg" /><br />
+            <p>Perú</p>
+          </div>
+          <div class="galeriaImatge">
+            <img src="../img/marmort.mico.jpeg" /><br />
+            <p>Mar Mort</p>
+          </div>
+          <div class="galeriaImatge">
+            <img src="../img/vienna.mico.jpeg" /><br />
+            <p>Vienna</p>
+          </div>
+          <div class="galeriaImatge">
+            <img src="../img/ecrines.mico.jpeg" /><br />
+            <p>Ecrines</p>
+          </div>
+          <div class="galeriaImatge">
+            <img src="../img/sudafrica.mico.jpeg" /><br />
+            <p>Sud Àfrica</p>
+          </div>
+          <div class="galeriaImatge">
+            <img src="../img/india.mico.jpeg" /><br />
+            <p>Índia</p>
+          </div>
+        </div>
+        <div id="myModal" class="modal">
+          <span class="close">&times;</span>
+          <img class="modal-content" id="img01" />
+          <div id="caption"></div>
         </div>
       </div>
-      <div class="container">
-        <h1>Galeria</h1>
-        <div id="container">
-          <div id="galeria">
-            <img src="../img/madagascar.mico.jpeg" id="img1" class="imgGaleria"><br>
-            <p class="p">Madagascar</p><br>
-          </div>
-          <div class="galeria">
-            <img src="../img/eurodisney.mico.jpeg" id="img2" class="imgGaleria"><br>
-            <p class="p">Eurodisney</p><br>
-          </div>
-          <div class="galeria">
-            <img src="../img/dolomitas.mico.jpeg" id="img3" class="imgGaleria"><br>
-            <p class="p">Dolomitas</p><br>
-          </div>
-          <div class="galeria">
-            <img src="../img/nepal.mico.jpeg" id="img4" class="imgGaleria"><br>
-            <p class="p">Nepal</p>
-          </div>
-          <div class="galeria">
-            <img src="../img/noruega.mico.jpeg" id="img5" class="imgGaleria"><br>
-            <p class="p">Noruega</p>
-          </div>
-          <div class="galeria">
-            <img src="../img/taliandia.mico.jpeg" id="img6" class="imgGaleria"><br>
-            <p class="p">Taliandia</p>
-          </div>
-          <div class="galeria">
-            <img src="../img/peru.mico.jpeg" id="img7" class="imgGaleria"><br>
-            <p class="p">Perú</p>
-          </div>
-          <div class="galeria">
-            <img src="../img/marmort.mico.jpeg" id="img8" class="imgGaleria"><br>
-            <p class="p">Mar Mort</p>
-          </div>
-          <div class="galeria">
-            <img src="../img/vienna.mico.jpeg" id="img9" class="imgGaleria"><br>
-            <p class="p">Vienna</p>
-          </div>
-          <div class="galeria">
-            <img src="../img/ecrines.mico.jpeg" id="img10" class="imgGaleria"><br>
-            <p class="p">Ecrines</p>
-          </div>
-          <div class="galeria">
-            <img src="../img/sudafrica.mico.jpeg" id="img11" class="imgGaleria"><br>
-            <p class="p">Sud Àfrica</p>
-          </div>
-          <div class="galeria">
-            <img src="../img/india.mico.jpeg" id="img12"><br>
-            <p class="p">Índia</p>
-          </div>
-        </div>
-      </div>
-    </body>
-     
+    </div>
+    <script src="./script/main.js"></script>
+  </body>
+</html>
