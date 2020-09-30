@@ -71,7 +71,9 @@ body {
 #activitatsAll,
 #galeriaAll,
 #merchAll,
-#equipacioAll {
+#equipacioAll,
+#zonaAll,
+#contacteAll {
   display: flex;
   flex-wrap: wrap;
   margin: auto;
@@ -88,7 +90,8 @@ body {
 #infoActivitats,
 #infoGaleria,
 #infoMerch,
-#infoEquipacio {
+#infoEquipacio,
+#infoZona {
   color: #ffffff;
 }
 
@@ -308,7 +311,6 @@ body {
   text-align: center;
   color: #ccc;
   padding: 10px 0;
-  height: 150px;
 }
 
 /* Add Animation */
@@ -389,7 +391,7 @@ body {
 #placa,
 #desplom {
   width: 300px;
-  margin: auto;
+  margin: 10% auto;
 }
 #bombo img,
 #cova img,
@@ -397,6 +399,7 @@ body {
 #desplom img {
   width: 200px;
   border: 5px solid #bfbfbf;
+  float: left;
 }
 #bombo p,
 #cova p,
@@ -404,4 +407,38 @@ body {
 #desplom p {
   writing-mode: vertical-rl;
   text-orientation: mixed;
+  color: white;
+}
+
+#zones div a {
+  text-decoration: none;
+}
+#zones div a:visited {
+  text-decoration: none;
+  color: white;
+}
+
+.vies {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10% auto;
+}
+
+.vies img {
+  border: 5px solid #bfbfbf;
+  width: 300px;
+  margin: auto;
+}
+
+#infoZona a {
+  text-decoration: none;
+  color: white;
+}
+#infoZona a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+.via {
+  border: 5px solid #bfbfbf;
 }

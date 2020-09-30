@@ -1,15 +1,15 @@
-// MAKE GALLERY IMAGES LARGER VERSION 1
-$(document).ready(function () {
-  var small = { width: "50%" };
-  var large = { width: "800px", height: "100%" };
-  var count = 1;
-  $(".galeriaImatge img")
-    .css(small)
-    .on("click", function () {
-      $(this).animate(count == 1 ? large : small);
-      count = 1 - count;
-    });
-});
+// // MAKE GALLERY IMAGES LARGER VERSION 1
+// $(document).ready(function () {
+//   var small = { width: "50%" };
+//   var large = { width: "800px", height: "100%" };
+//   var count = 1;
+//   $(".galeriaImatge img")
+//     .css(small)
+//     .on("click", function () {
+//       $(this).animate(count == 1 ? large : small);
+//       count = 1 - count;
+//     });
+// });
 
 //MAKE GALLERY IMAGES LARGER VERSION 2
 // Get the modal
@@ -19,11 +19,11 @@ var modal = document.getElementById("myModal");
 var img = document.getElementsByClassName("imatge");
 var modalImg = document.getElementById("imatge");
 var captionText = document.getElementsByClassName("caption");
-img.onclick = function () {
+$(img).click(function () {
   modal.style.display = "block";
-  modalImg.src = document.getElementsByClassName("imatge");
+  modalImg = document.getElementsByClassName("imatge");
   captionText.innerHTML = document.getElementsByClassName("caption");
-};
+});
 
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
