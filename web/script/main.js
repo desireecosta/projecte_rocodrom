@@ -10,31 +10,23 @@ $(document).ready(function () {
       count = 1 - count;
     });
 });
-<style type="text/css">
-*{margin: 0; padding: 0;}
-.caja{
-  display: flex;
-  flex-flow: column wrap;
-  justify-content: center;
-  align-items: center;
-  background: #333944;
-}
-.box{
-  width: 450px;
-  height: 300px;
-  background: #CCC;
-  overflow: hidden;
+// Get the modal
+var modal = document.getElementById("infoMerch");
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById("merchContainer");
+var modalImg = document.getElementById("infoMerch");
+var captionText = document.getElementById("infoMerch");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
 }
 
-.box img{
-  width: 100%;
-  height: auto;
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("merchContent")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
 }
-@supports(object-fit: cover){
-    .box img{
-      height: 100%;
-      object-fit: cover;
-      object-position: center center;
-    }
-}
-</style>
