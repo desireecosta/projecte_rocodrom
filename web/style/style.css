@@ -75,7 +75,8 @@ body {
 #bomboAll,
 #covaAll,
 #desplomAll,
-#placaAll #contacteAll {
+#placaAll,
+#contacteAll {
   display: flex;
   flex-wrap: wrap;
   margin: auto;
@@ -96,7 +97,8 @@ body {
 #infoBombo,
 #infoCova,
 #infoDesplom,
-#infoPlaca #infoContacte {
+#infoPlaca,
+#infoContacte {
   color: #ffffff;
 }
 
@@ -481,4 +483,18 @@ body {
 .telefon a {
   text-decoration: none;
   color: white;
+}
+
+.comentariUsuari {
+  border: 5px solid #bfbfbf;
+  padding: 1%;
+  margin: auto;
+  width: 70%;
+}
+
+.usuari {
+  text-transform: uppercase;
+}
+.comentari {
+  font-style: italic;
 }
