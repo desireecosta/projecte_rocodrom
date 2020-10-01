@@ -285,7 +285,7 @@ body {
 /* ////////////////////////////////////////////////////////////////////////////////////// */
 
 /* The Modal (background) */
-.modalGaleriam,
+.modalGaleria,
 .modalMerch {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
@@ -484,4 +484,18 @@ body {
 .telefon a {
   text-decoration: none;
   color: white;
+}
+
+.comentariUsuari {
+  border: 5px solid #bfbfbf;
+  padding: 1%;
+  margin: auto;
+  width: 70%;
+}
+
+.usuari {
+  text-transform: uppercase;
+}
+.comentari {
+  font-style: italic;
 }
