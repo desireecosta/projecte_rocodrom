@@ -22,3 +22,21 @@ span.onclick = function () {
 };
 
 ////////////////////  MAPA  ////////////////////
+
+
+
+
+////////////////////  MENU HAMBURGUESA OBRIR I TANCAR  ///////////////////
+
+$("#hamburguesa").click(function(){
+  $("#menu").css("display","flex");
+  $("#mainQuiSom").hide();
+  $("#imatgesQuiSom").hide();
+  $("#hamburguesa").hide();
+});
+$("#tancar").click(function(){
+  $("#menu").hide();
+  $("#mainQuiSom").show();
+  $("#imatgesQuiSom").show();
+  $("#hamburguesa").show();
+});
