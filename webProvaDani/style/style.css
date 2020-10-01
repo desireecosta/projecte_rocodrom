@@ -160,7 +160,6 @@ p{
   background-color: rgba(191, 191, 191, 255);
   width: 300px;
   margin-left: 30px;
-  height: 100vh;
 }
 
 #tancar{
@@ -236,11 +235,11 @@ Menu Xarxes Socials
 #xxss{
   width:100%;
   display: flex;
-  position: absolute;
-  bottom:110px;
+  position: relative;
   justify-content: flex-end;
   align-items: center;
   height:100px;
+  margin-top:35px;
 }
 
 #xxss .fab{
@@ -315,14 +314,14 @@ Menu Xarxes Socials
 }
 
 #idiomes {
-  position: absolute;
+  position:relative;
   display:flex;
   align-items: center;
   justify-content: flex-end;
-  bottom:30px;
   height: 80px;
   width: 100%;
   background-color: var(--grisfosc);
+  margin-bottom: 30px;
 }
 
 #idiomes p{
@@ -609,12 +608,11 @@ Menu Xarxes Socials
     display:flex;
     flex-wrap: wrap;
     width:100vw;
-    height:100vh;
     margin:0;
   }
   #idiomes{
-    bottom:0;
     height:150px;
+    margin-bottom: 0;
   }
   #selectorIdiomes a{
     font-size:20px;
@@ -625,8 +623,8 @@ Menu Xarxes Socials
     margin-right:30px;
   }
   #xxss{
-    bottom:150px;
     height:150px;
+    margin-top:85px;
   }
   #xxss .fab{
     font-size: 60px;
@@ -639,7 +637,7 @@ Menu Xarxes Socials
     display: none;
   }
   .logo{
-    height: calc(100% - 150px);
+    height: 680px;
     width:400px;
     overflow: scroll;
     z-index: 100;
@@ -661,11 +659,13 @@ Menu Xarxes Socials
     margin-left:0;
   }
   #nav{
-    height: calc(100% - 300px);
+    height: 680px;
     overflow: scroll;
     z-index: 100;
     width:40%;
-    margin: 100px auto 0;
+    margin: 0 auto;
+    padding: 100px 0 0;
+    box-sizing: border-box;
   }
   #nav a{
     margin: 0 0 20px;
@@ -729,7 +729,6 @@ Menu Xarxes Socials
     position: relative;
     height:60px;
     display: block;
-    bottom: auto;
     width:auto;
     margin: 30px auto;
   }
@@ -737,7 +736,6 @@ Menu Xarxes Socials
     position: relative;
     height:150px;
     display: flex;
-    bottom: auto;
     margin: 0 auto;
     justify-content: center;
   }
