@@ -465,7 +465,8 @@ Idiomes menu
   color: white;
 }
 
-#infoActivitats {
+#infoActivitats,
+#infoEquipació {
   display: flex;
   flex-wrap: wrap;
   padding: 1%;
