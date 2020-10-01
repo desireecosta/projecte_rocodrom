@@ -1,30 +1,42 @@
-//MAKE GALLERY IMAGES LARGER VERSION 2
+//MODAL GALERIA
+
 // Get the modal
-var modal = document.getElementById("myModal");
+var modalGaleria = document.getElementById("myModalGaleria");
 
 // Get the image and insert it inside the modal - use its "alt" text as a caption
-var img = document.getElementsByClassName("imatge");
-var modalImg = document.getElementById("img01");
-var captionText = document.getElementsByClassName("caption");
-console.log(modalImg);
-$(".imatge").click(function () {
-  modal.style.display = "block";
-  modalImg.src = this.src;
+var imgGaleria = document.getElementsByClassName("imatgeGaleria");
+var modalGaleriaImg = document.getElementById("imgModalGaleria");
+var captionTextGaleria = document.getElementsByClassName("captionGaleria");
+$(".imatgeGaleria").click(function () {
+  modalGaleria.style.display = "block";
+  modalGaleriaImg.src = this.src;
   captionText.innerHTML = document.getElementsByClassName("caption");
 });
 
 // Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
+var spanGaleria = document.getElementsByClassName("closeGaleria")[0];
 
 // When the user clicks on <span> (x), close the modal
-/* span.onclick = function () {
-  modal.style.display = "none";
-}; */
+$(".closeGaleria").click(function () {
+  modalGaleria.style.display = "none";
+});
 
-////////////////////  MAPA  ////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
+//MODAL MERCH
 
+// Get the modal
+var modalMerch = document.getElementById("myModalMerch");
 
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var imgMerch = document.getElementsByClassName("imatgeMerch");
+var modalMerchImg = document.getElementById("imgModalMerch");
+var captionTextMerch = document.getElementsByClassName("captionMerch");
+$(".imatgeMerch").click(function () {
+  modalMerch.style.display = "block";
+  modalMerchImg.src = this.src;
+  captionTextMerch.innerHTML = document.getElementsByClassName("captionMerch");
+});
 
 
 $(function(){

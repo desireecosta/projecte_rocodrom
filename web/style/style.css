@@ -333,8 +333,10 @@ Idiomes menu
 #galeriaAll,
 #merchAll,
 #equipacioAll,
-#zonaAll,
-#contacteAll {
+#bomboAll,
+#covaAll,
+#desplomAll,
+#placaAll #contacteAll {
   display: flex;
   flex-wrap: wrap;
   margin: auto;
@@ -358,7 +360,10 @@ Idiomes menu
 #infoGaleria,
 #infoMerch,
 #infoEquipacio,
-#infoZona {
+#infoBombo,
+#infoCova,
+#infoDesplom,
+#infoPlaca #infoContacte {
   color: #ffffff;
 }
 
@@ -524,15 +529,13 @@ Idiomes menu
   opacity: 0.7;
 }
 
-.galeriaImatge p {
-}
-
 /* ////////////////////////////////////////////////////////////////////////////////////// */
 /* //////////           ENLARGE IMAGE TEST 2             //////////// */
 /* ////////////////////////////////////////////////////////////////////////////////////// */
 
 /* The Modal (background) */
-.modal {
+.modalGaleria,
+.modalMerch {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
@@ -554,7 +557,8 @@ Idiomes menu
   max-width: 700px;
 }
 
-#img01 {
+#imgModalGaleria,
+#imgModalMerch {
   display: flex;
   flex-wrap: wrap;
   margin: auto;
@@ -601,7 +605,8 @@ Idiomes menu
 }
 
 /* The Close Button */
-.close {
+.closeGaleria,
+.closeMerch {
   position: absolute;
   top: 15px;
   right: 35px;
@@ -611,8 +616,10 @@ Idiomes menu
   transition: 0.3s;
 }
 
-.close:hover,
-.close:focus {
+.closeGaleria:hover,
+.closeMerch:hover,
+.closeGaleria:focus,
+.closeMerch:focus {
   color: #bbb;
   text-decoration: none;
   cursor: pointer;
@@ -685,11 +692,17 @@ Idiomes menu
   margin: auto;
 }
 
-#infoZona a {
+#infoBombo a,
+#infoCova a,
+#infoDesplom a,
+#infoPlaca a {
   text-decoration: none;
   color: white;
 }
-#infoZona a:visited {
+#infoBombo a:visited,
+#infoCova a:visited,
+#infoDesplom a:visited,
+#infoPlaca a:visited {
   color: white;
   text-decoration: none;
 }

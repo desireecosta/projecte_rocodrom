@@ -68,7 +68,93 @@
           </div>
         </div>
         <div id="hamburguesa"><i class="fas fa-bars"></i><label for="#menu">Menú</label></div>
-        <div id="infoContacte"></div>
+        <div id="infoContacte">
+          <div id="contactes">
+            <div class="atencioPublic">
+              <h3>Atenció al públic</h3>
+              <p>Vine'ns a veure de dilluns a divendres: 9 a 22:30 h</p>
+              <p>i els dissabtes i diumenges: 10 a 20 h</p>
+            </div>
+            <div class="correu">
+              <h3>Correu</h3>
+              <p>Envia'ns un correu electrònic a:</p>
+              <a href="mailto:info@calmico.cat"> info@calmico.cat</a>
+            </div>
+            <div class="facebook">
+              <h3>Facebook</h3>
+              <p>A través d'un missatge intern a:</p>
+              <a
+                target="_blank"
+                href="https://www.facebook.com/Roc%C3%B2drom-Girona-187271461378780/"
+                >Rocòdrom Girona</a
+              >
+            </div>
+            <div class="telefon">
+              <h3>Telèfon</h3>
+              <p>Contacta'ns a través del mòbil</p>
+              <a href="tel:972911669">972 91 16 69</a>
+            </div>
+          </div>
+  
+          <div class="mapouter">
+            <div class="gmap_canvas">
+              <iframe
+                width="600"
+                height="500"
+                id="gmap_canvas"
+                src="https://maps.google.com/maps?q=calmico&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                frameborder="0"
+                scrolling="no"
+                marginheight="0"
+                marginwidth="0"
+              ></iframe
+              ><a href="https://123movies-to.org">123 moview</a>
+            </div>
+            <style>
+              .mapouter {
+                position: relative;
+                text-align: right;
+                height: 500px;
+                width: 600px;
+              }
+              .gmap_canvas {
+                overflow: hidden;
+                background: none !important;
+                height: 500px;
+                width: 600px;
+              }
+            </style>
+          </div>
+  
+          <div id="formulariContacte">
+            <form id="form" method="POST">
+              <div class="DataName">
+                <label for="DataName">Nom:</label>
+                <input type="text" id="DataName" name="DataName" />
+              </div>
+              <div class="DataSurname">
+                <label for="DataSurname">Cognom:</label>
+                <input type="text" id="DataSurame" name="DataSurname" />
+              </div>
+              <div class="Email">
+                <label for="Email">Email:</label>
+                <input type="email" id="Email" name="Email" />
+              </div>
+              <div class="Phone">
+                <label for="Phone">Telèfon:</label>
+                <input type="tel" id="Phone" name="Phone" />
+              </div>
+              <div class="City">
+                <label for="City">Ciutat:</label>
+                <input type="text" id="City" name="City" />
+              </div>
+              <div class="FormText">
+                <label for="FormText">Text:</label>
+                <input type="text" id="FormText" name="FormText" />
+              </div>
+            </form>
+          </div>
+        </div>
       </div>
     </div>
     <script src="./script/main.js"></script>
