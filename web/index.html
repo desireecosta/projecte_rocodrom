@@ -8,6 +8,8 @@
       href="https://fonts.googleapis.com/css2?family=Caveat&display=swap"
       rel="stylesheet"
     />
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/5c757390c0.js" crossorigin="anonymous"></script>
     <!--
     <link
       rel="stylesheet"
@@ -32,43 +34,46 @@
     ></script> -->
   </head>
   <body>
-    <div id="rrss">
-      <a
-        class="facebook"
-        href="https://www.facebook.com/Roc%C3%B2drom-Girona-187271461378780/"
-        target="_blank"
-        ><img src="./asstets/facebookIcon.png" alt="Facebook"
-      /></a>
-      <a
-        class="youtube"
-        href="https://www.youtube.com/watch?v=UnxQF2poe0g&ab_channel=MontseEstevez"
-        target="_blank"
-        ><img src="./asstets/youtubeIcon.png" alt="YouTube"
-      /></a>
-      <a
-        class="instagram"
-        href="https://www.instagram.com/calmico/"
-        target="_blank"
-        ><img src="./asstets/iconInstagram.png" alt="Instagram"
-      /></a>
-    </div>
-    <div class="start">
-      <div class="fletxa">
-        <h2 id="clicaElMico">ACCÉS A LA WEB</h2>
-        <img
-          id="fletxaHome"
-          src="./asstets/fletxa_home.png"
-          alt="Clica el mico"
-        />
+    <div id="bordes">
+      <div id="bordeEsquerre"></div>
+      <div id="bordeDret"></div>
+      <div id="bordeDalt"></div>
+      <div id="bordeBaix"></div>
+      <div class="start">
+        <div class="fletxa">
+          <h2 id="clicaElMico">ACCÉS A LA WEB</h2>
+          <img
+            id="fletxaHome"
+            src="asstets/fletxa_home.png"
+            alt="Clica el mico"
+          />
+        </div>
+        <a href="quiSom.html"
+          ><img
+            href="quiSom.html"
+            id="monoHome"
+            src="asstets/mono_home.png"
+            alt="Mico"
+        /></a>
       </div>
-      <a href="./quiSom.html"
-        ><img
-          href="./quiSom.html"
-          id="monoHome"
-          src="./asstets/mono_home.png"
-          alt="Mico"
-      /></a>
+      <div id="rrss">
+        <a
+          class="facebook"
+          href="https://www.facebook.com/Roc%C3%B2drom-Girona-187271461378780/"
+          target="_blank"
+          ><i class="fab fa-facebook-square"></i></a>
+        <a
+          class="youtube"
+          href="https://www.youtube.com/watch?v=UnxQF2poe0g&ab_channel=MontseEstevez"
+          target="_blank"
+          ><i class="fab fa-youtube"></i></a>
+        <a
+          class="instagram"
+          href="https://www.instagram.com/calmico/"
+          target="_blank"
+          ><i class="fab fa-instagram"></i></a>
+      </div>
+      <script src="script/main.js"></script>
     </div>
-    <script src="./script/main.js"></script>
   </body>
 </html>
