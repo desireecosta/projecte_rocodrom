@@ -72,8 +72,10 @@ body {
 #galeriaAll,
 #merchAll,
 #equipacioAll,
-#zonaAll,
-#contacteAll {
+#bomboAll,
+#covaAll,
+#desplomAll,
+#placaAll #contacteAll {
   display: flex;
   flex-wrap: wrap;
   margin: auto;
@@ -91,7 +93,10 @@ body {
 #infoGaleria,
 #infoMerch,
 #infoEquipacio,
-#infoZona {
+#infoBombo,
+#infoCova,
+#infoDesplom,
+#infoPlaca #infoContacte {
   color: #ffffff;
 }
 
@@ -272,15 +277,13 @@ body {
   opacity: 0.7;
 }
 
-.galeriaImatge p {
-}
-
 /* ////////////////////////////////////////////////////////////////////////////////////// */
 /* //////////           ENLARGE IMAGE TEST 2             //////////// */
 /* ////////////////////////////////////////////////////////////////////////////////////// */
 
 /* The Modal (background) */
-.modal {
+.modalGaleriam,
+.modalMerch {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
@@ -302,7 +305,8 @@ body {
   max-width: 700px;
 }
 
-#img01 {
+#imgModalGaleria,
+#imgModalMerch {
   display: flex;
   flex-wrap: wrap;
   margin: auto;
@@ -349,7 +353,8 @@ body {
 }
 
 /* The Close Button */
-.close {
+.closeGaleria,
+.closeMerch {
   position: absolute;
   top: 15px;
   right: 35px;
@@ -359,8 +364,10 @@ body {
   transition: 0.3s;
 }
 
-.close:hover,
-.close:focus {
+.closeGaleria:hover,
+.closeMerch:hover,
+.closeGaleria:focus,
+.closeMerch:focus {
   color: #bbb;
   text-decoration: none;
   cursor: pointer;
@@ -435,15 +442,43 @@ body {
   margin: auto;
 }
 
-#infoZona a {
+#infoBombo a,
+#infoCova a,
+#infoDesplom a,
+#infoPlaca a {
   text-decoration: none;
   color: white;
 }
-#infoZona a:visited {
+#infoBombo a:visited,
+#infoCova a:visited,
+#infoDesplom a:visited,
+#infoPlaca a:visited {
   color: white;
   text-decoration: none;
 }
 
 .via {
   border: 5px solid #bfbfbf;
+}
+
+#contactes {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+}
+
+.atencioPublic,
+.correu,
+.facebook,
+.telefon {
+  border: 5px solid #bfbfbf;
+  padding: 1%;
+  text-align: center;
+}
+.atencioPublic a,
+.correu a,
+.facebook a,
+.telefon a {
+  text-decoration: none;
+  color: white;
 }
