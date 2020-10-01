@@ -336,7 +336,8 @@ Idiomes menu
 #bomboAll,
 #covaAll,
 #desplomAll,
-#placaAll #contacteAll {
+#placaAll,
+#contacteAll {
   display: flex;
   flex-wrap: wrap;
   margin: auto;
@@ -363,7 +364,8 @@ Idiomes menu
 #infoBombo,
 #infoCova,
 #infoDesplom,
-#infoPlaca #infoContacte {
+#infoPlaca,
+#infoContacte {
   color: #ffffff;
 }
 
@@ -950,4 +952,18 @@ Idiomes menu
   .merchContent img {
     width: 80%;
   }
+}
+
+.comentariUsuari {
+  border: 5px solid #bfbfbf;
+  padding: 1%;
+  margin: auto;
+  width: 70%;
+}
+
+.usuari {
+  text-transform: uppercase;
+}
+.comentari {
+  font-style: italic;
 }
