@@ -302,6 +302,14 @@ body {
   max-width: 700px;
 }
 
+#img01 {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  width: 70%;
+  border: 5px solid #bfbfbf;
+}
+
 /* Caption of Modal Image */
 .galeriaImatge p {
   margin: auto;
@@ -369,9 +377,6 @@ body {
 
 #rrss {
   text-align: center;
-}
-
-#rrss a {
 }
 
 #rrss a img {
