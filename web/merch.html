@@ -5,13 +5,7 @@
     <title>MERCH</title>
     <link rel="stylesheet" href="./style/style.css" />
   </head>
-  <!-- <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-      crossorigin="anonymous"
-    />
-    <script
+  <script
       src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
       integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
       crossorigin="anonymous"
@@ -21,11 +15,6 @@
       integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
       crossorigin="anonymous"
     ></script>
-    <script
-      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-      crossorigin="anonymous"
-    ></script> -->
   <body id="bodymerch">
     <div id="merchAll">
       <div id="menu">
@@ -58,41 +47,47 @@
         <h1>MERCH</h1>
         <div id="merchContainer">
           <div class="merchContent">
-            <img src="../img/peudegat.jpg" />
+            <img src="../img/peudegat.jpg" class="image" />
             <p>Aqui tenim el nostre peu de gat per als petits.
               Vine a la notra botiga!! </p>
           </div>
           <div class="merchContent">
-            <img src="../img/peudegatvermell.jpg" />
+            <img src="../img/peudegatvermell.jpg" class="image"/>
             <p>Micos aqui tenim més varietat de peu de gat!!
               Vine a la nostra botiga!!
             </p>
           </div>
           <div class="merchContent">
-            <img src="../img/samarretamico.jpg" />
+            <img src="../img/samarretamico.jpg" class="image"/>
             <p>Com bons mico que som no poden faltar les nostres samarretes!!
               Vine a la nostra botiga!!
             </p>
           </div>
           <div class="merchContent">
-            <img src="../img/cordesmicos.jpg" />
+            <img src="../img/cordesmicos.jpg" class="image"/>
             <p>No poden faltar les cordes Mico!
               Vine a la nostra botiga!!
             </p>
           </div>
           <div class="merchContent">
-            <img src="../img/camsmico.jpg"/>
+            <img src="../img/camsmico.jpg" class="image"/>
             <p> Micos! Tant de bons que sou escalant aqui teniu els nostres cams!!
               Vine a la nostra botiga!!
             </p>
           </div>
           <div class="merchContent">
-            <img src="../img/crachpadsmico.jpg">
+            <img src="../img/crachpadsmico.jpg" class="image"/>
             <p>Micos!!No ens podem oblidar de la nostra chrashpad!!
               Vine a la nostra botiga!!
             </p>
           </div>
         </div>
+         <!-- /////MODAL ENLARGE IMAGE///// -->
+         <div id="MyModal" class="modalMerch">
+            <span class="closeMerch">&times;</span>
+            <img class="modal-Content" id="img02" />
+            <div id="caption"></div>
+          </div>
       </div>
     </div>
     <script src="./script/main.js"></script>
