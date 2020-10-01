@@ -1,9 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" type="text/css" href="../web/style/style.css" />
     <title>Galeria</title>
-
+    <!-- <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    /> <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script> -->
+    <script src="https://kit.fontawesome.com/5c757390c0.js" crossorigin="anonymous"></script>
     <script
       src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
       integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
@@ -14,38 +23,50 @@
       integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
       crossorigin="anonymous"
     ></script>
+    <link rel="stylesheet" type="text/css" href="../web/style/style.css" />
   </head>
   <body>
-    <div id="galeriaAll">
-      <div id="menu">
-        <div class="logo">
-          <img id="logo" src="../img/monoMenu.svg" alt="" />
-          <h4>CAL MICO</h4>
-          <p>Rocòdrom Girona</p>
-        </div>
-
-        <nav id="nav">
-          <a href="./quiSom.html">Qui som</a>
-          <a href="./equipacio.html">Equipació actual</a>
-          <a href="./activitats.html">Activitats</a>
-          <a href="./tarifes.html">Tarifes</a>
-          <a class="currentLink" href="./galeria.html">Galeria</a>
-          <a href="./merch.html">Merch</a>
-          <a href="./contacte.html">Contacte</a>
-        </nav>
-
-        <!-- <div id="idiomes">
-          <p>IDIOMES</p>
-          <div id="selectorIdiomes">
-            <p>EN</p>
-            <p>ES</p>
-            <p>CA</p>
-            <p>FR</p>
+    <div id="bordes">
+      <div id="bordeEsquerre"></div>
+      <div id="bordeDret"></div>
+      <div id="bordeDalt"></div>
+      <div id="bordeBaix"></div>
+      <div id="galeriaAll">
+        <div id="menu">
+          <div id="tancar"><i class="fas fa-times"></i></div>
+          <div class="logo">
+            <img id="logo" src="asstets/monoMenu.svg" alt="" />
+            <h4>CAL MICO</h4>
+            <p>Rocòdrom Girona</p>
           </div>
-        </div> -->
-      </div>
+          <nav id="nav">
+            <a href="./quiSom.html">Qui som</a>
+            <a href="./equipacio.html">Equipació actual</a>
+            <a href="./activitats.html">Activitats</a>
+            <a href="./tarifes.html">Tarifes</a>
+            <a class="currentLink" href="./galeria.html">Galeria</a>
+            <a href="./merch.html">Merch</a>
+            <a href="./contacte.html">Contacte</a>
+          </nav>
+          <div id="xxss">
+            <i class="fab fa-facebook-square"></i>
+            <i class="fab fa-youtube"></i>
+            <i class="fab fa-instagram"></i>
+          </div>
+          <div id="idiomes">
+            <p>Idioma</p>
+            <div id="selectorIdiomes">
+              <a class="currentLink" href="">CA</a>
+              <a href="">ES</a>
+              <a href="">EN</a>
+              <a href="">FR</a>
+            </div>
+          </div>
+        </div>
+        <div id="hamburguesa"><i class="fas fa-bars"></i><label for="#menu">Menú</label></div>
       <div id="infoGaleria">
-        <h1>GALERIA | MICOS PEL MÓN</h1>
+        <h1>GALERIA</h1>
+        <h2>Micos pel món</h2>
         <div id="galeriaContainer">
           <div class="galeriaImatge">
             <img
@@ -113,7 +134,8 @@
           <div id="caption"></div>
         </div>
       </div>
-    </div>
+      </div>
+     </div> 
     <script src="./script/main.js"></script>
   </body>
 </html>

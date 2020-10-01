@@ -3,26 +3,67 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>LA PLACA</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/5c757390c0.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./style/style.css" />
   </head>
   <body>
+    <div id="bordes">
+      <div id="bordeEsquerre"></div>
+      <div id="bordeDret"></div>
+      <div id="bordeDalt"></div>
+      <div id="bordeBaix"></div>
     <!-- <button type="button" class="btn btn-outline-light" href="./equipacio.html">
       TORNAR
     </button> -->
-    <div id="placaAll">
-      <div id="infoPlaca">
-        <h1>LA PLACA</h1>
-        <a href="./equipacio.html">Tornar a les zones</a>
-        <div class="vies">
-          <img src="" alt="" />
-          <img src="" alt="" />
-          <img src="" alt="" />
-          <img src="" alt="" />
+      <div id="PlacaAll">
+        <div id="menu">
+          <div id="tancar"><i class="fas fa-times"></i></div>
+          <div class="logo">
+            <img id="logo" src="asstets/monoMenu.svg" alt="" />
+            <h4>CAL MICO</h4>
+            <p>Rocòdrom Girona</p>
+          </div>
+          <nav id="nav">
+            <a href="./quiSom.html">Qui som</a>
+            <a class="currentLink" href="./equipacio.html">Equipació actual</a>
+            <a href="./activitats.html">Activitats</a>
+            <a href="./tarifes.html">Tarifes</a>
+            <a href="./galeria.html">Galeria</a>
+            <a href="./merch.html">Merch</a>
+            <a href="./contacte.html">Contacte</a>
+          </nav>
+          <div id="xxss">
+            <a  href="https://www.facebook.com/Roc%C3%B2drom-Girona-187271461378780/"><i class="fab fa-facebook-square"></i></a>
+            <a  href="https://www.youtube.com/watch?v=UnxQF2poe0g&ab_channel=MontseEstevez"><i class="fab fa-youtube"></i></a>
+            <a  href="https://www.instagram.com/calmico/"><i class="fab fa-instagram"></i></a>
+          </div>
+          <div id="idiomes">
+            <p>Idioma</p>
+            <div id="selectorIdiomes">
+              <a class="currentLink" href="">CA</a>
+              <a href="">ES</a>
+              <a href="">EN</a>
+              <a href="">FR</a>
+            </div>
+          </div>
+        </div>
+        <div id="hamburguesa"><i class="fas fa-bars"></i><label for="#menu">Menú</label></div>
+        <div id="infoPlaca">
+          <h1>LA PLACA</h1>
+          <a href="./equipacio.html">Tornar a les zones</a>
+          <div class="vies">
+            <img src="" alt="" />
+            <img src="" alt="" />
+            <img src="" alt="" />
+            <img src="" alt="" />
+          </div>
         </div>
       </div>
+      <div id="viesPlaca">
+        <div class="via"></div>
+      </div>
     </div>
-    <div id="viesPlaca">
-      <div class="via"></div>
-    </div>
+    <script type="text/javascript" src="script/main.js"></script>
   </body>
 </html>
