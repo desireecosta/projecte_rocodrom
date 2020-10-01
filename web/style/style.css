@@ -91,7 +91,8 @@ body {
 #infoGaleria,
 #infoMerch,
 #infoEquipacio,
-#infoZona {
+#infoZona,
+#infoContacte {
   color: #ffffff;
 }
 
@@ -272,9 +273,6 @@ body {
   opacity: 0.7;
 }
 
-.galeriaImatge p {
-}
-
 /* ////////////////////////////////////////////////////////////////////////////////////// */
 /* //////////           ENLARGE IMAGE TEST 2             //////////// */
 /* ////////////////////////////////////////////////////////////////////////////////////// */
@@ -446,4 +444,26 @@ body {
 
 .via {
   border: 5px solid #bfbfbf;
+}
+
+#contactes {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+}
+
+.atencioPublic,
+.correu,
+.facebook,
+.telefon {
+  border: 5px solid #bfbfbf;
+  padding: 1%;
+  text-align: center;
+}
+.atencioPublic a,
+.correu a,
+.facebook a,
+.telefon a {
+  text-decoration: none;
+  color: white;
 }

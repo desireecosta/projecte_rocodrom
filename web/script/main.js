@@ -21,7 +21,8 @@ span.onclick = function () {
   modal.style.display = "none";
 };
 
-////////////////////  MAPA  ////////////////////
+
+<<<<<<< Updated upstream
 
 //MAKE GALLERY IMAGES LARGER VERSION 2
 // Get the modal
@@ -46,4 +47,5 @@ span.onclick = function () {
   modal.style.display = "none";
 };
 
-////////////////////  MAPA  ////////////////////
+
+
