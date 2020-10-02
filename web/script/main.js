@@ -174,21 +174,4 @@ $(function () {
     $("#infoMerch").show();
     $("#infoTarifes").show();
   });
-
-  ///////////////// MAX HEIGHT CONTAINERS  /////////////////////
-
-  /*$("#mainQuiSom").css("max-height", $("#menu").css("height"));
-  $("#imatgesQuiSom").css("max-height", $("#menu").css("height"));
-  
-  $("#activitats").css("max-height", $("#menu").css("height"));
-  $("#infoContacte").css("max-height", $("#menu").css("height"));
-  $("#infoBombo").css("max-height", $("#menu").css("height"));
-  $("#infoCova").css("max-height", $("#menu").css("height"));
-  $("#infoPlaca").css("max-height", $("#menu").css("height"));
-  $("#infoDesplom").css("max-height", $("#menu").css("height"));
-  $("#mainEquipacio").css("max-height", $("#menu").css("height"));
-  $("#infoGaleria").css("max-height", $("#menu").css("height"));
-  $("#infoMerch").css("max-height", $("#menu").css("height"));
-  $("#infoTarifes").css("max-height", $("#menu").css("height"));
-  */
 });

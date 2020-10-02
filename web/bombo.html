@@ -74,122 +74,159 @@
           <h1>EL BOMBO</h1>
           <div id="desplegablePetitTop">
             <div id="equipacioLabelTop">
-              <h3>El<br>Bombo</h3>
+              <h3>El<br />Bombo</h3>
             </div>
           </div>
           <div id="containerVies">
             <div class="vies">
               <div id="viesImatges">
-                <a class="via"><img src="asstets/via1.jpg" alt="via"/></a>
-                <a class="via"><img src="asstets/via1.jpg" alt="via"/></a>
-                <a class="via"><img src="asstets/via1.jpg" alt="via"/></a>
-                <a class="via"><img src="asstets/via1.jpg" alt="via"/></a>
-              </div> 
+                <a class="imatgeBombo" class="via"
+                  ><img src="asstets/via1.jpg" alt="via"
+                /></a>
+                <a class="imatgeBombo" class="via"
+                  ><img src="asstets/via1.jpg" alt="via"
+                /></a>
+                <a class="imatgeBombo" class="via"
+                  ><img src="asstets/via1.jpg" alt="via"
+                /></a>
+                <a class="imatgeBombo" class="via"
+                  ><img src="asstets/via1.jpg" alt="via"
+                /></a>
+              </div>
+
+              <div id="myModalBombo" class="modalBombo">
+                <span class="closeBombo">&times;</span>
+                <div class="modal-content-bombo">
+                  <div class="viaBombo">
+                    <div class="imatgeVia"><img src="" alt="" /></div>
+                    <div class="infoVia">
+                      <div id="dificultatVia">
+                        <h1>DIFICULTAT</h1>
+                        <div class="dificultat">
+                          <div></div>
+                          <div></div>
+                          <div></div>
+                          <div></div>
+                          <div></div>
+                          <div></div>
+                        </div>
+                      </div>
+                      <div class="comentaris">
+                        <p>COMENTARIS</p>
+                        <label for="nouComentariBombo" name="nouComentariBombo"
+                          >Escriu aqui el teu comentari</label
+                        >
+                        <input id="nouComentariBombo" type="text" />
+                        <div class="comentarisUsuaris">
+                          <div class="comentariUsuari">
+                            <p class="usuari">juan</p>
+                            <p class="comentari">
+                              Lorem ipsum dolor sit, amet consectetur
+                              adipisicing elit. Quam amet repellat, labore sit
+                              eius laborum enim. Molestias autem, eius ut magnam
+                              sunt dolorum, consequuntur labore odit error vero
+                              et illo?
+                            </p>
+                          </div>
+                          <div class="comentariUsuari">
+                            <p class="usuari">manolo</p>
+                            <p class="comentari">
+                              Lorem ipsum dolor sit amet, consectetur
+                              adipisicing elit. A illum quasi tempore voluptate
+                              earum voluptatibus. Fugit officia cupiditate
+                              possimus. Temporibus, necessitatibus explicabo
+                              velit distinctio iusto consequuntur consequatur
+                              tempore asperiores magnam?
+                            </p>
+                          </div>
+                          <div class="comentariUsuari">
+                            <p class="usuari">pepito</p>
+                            <p class="comentari">
+                              Lorem ipsum dolor sit amet consectetur adipisicing
+                              elit. Similique molestiae optio, dolor debitis
+                              delectus laudantium expedita rem veniam
+                              praesentium, a aperiam temporibus assumenda
+                              voluptates tempora odit! Ducimus doloremque
+                              debitis tempore?
+                            </p>
+                          </div>
+                          <div class="comentariUsuari">
+                            <p class="usuari">paco</p>
+                            <p class="comentari">
+                              Lorem ipsum dolor sit amet consectetur adipisicing
+                              elit. Error minima ut nostrum sit in totam, iure a
+                              consequuntur odit consequatur blanditiis
+                              praesentium incidunt eum nihil voluptate sapiente
+                              quod dignissimos perspiciatis.
+                            </p>
+                          </div>
+                          <div class="comentariUsuari">
+                            <p class="usuari">emilio</p>
+                            <p class="comentari">
+                              Lorem ipsum dolor, sit amet consectetur
+                              adipisicing elit. Dicta fugiat, architecto nam
+                              possimus fugit accusantium iusto, sunt totam
+                              ducimus quasi nesciunt odit veniam tempore facere
+                              sed culpa explicabo. Illo, reprehenderit?
+                            </p>
+                          </div>
+                          <div class="comentariUsuari">
+                            <p class="usuari">antonio</p>
+                            <p class="comentari">
+                              Lorem ipsum dolor sit amet, consectetur
+                              adipisicing elit. Ducimus pariatur similique, sunt
+                              vel voluptatum perferendis consectetur optio unde
+                              expedita quaerat illum explicabo earum vero
+                              tenetur natus impedit in officiis nihil!
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
               <div id="viesInfo">
-                <p>Total de x vies: <span>a Blanques</span> - <span id="grogues">b Grogues</span> - <span id="blaves">c Blaves</span> - <span id="taronges">d Taronges</span> - <span id="vermelles">e Vermelles</span> - <span id="negres">f Negres</span></p>
+                <p>
+                  Total de x vies: <span>a Blanques</span> -
+                  <span id="grogues">b Grogues</span> -
+                  <span id="blaves">c Blaves</span> -
+                  <span id="taronges">d Taronges</span> -
+                  <span id="vermelles">e Vermelles</span> -
+                  <span id="negres">f Negres</span>
+                </p>
               </div>
               <select class="datesConfiguracions">
-                <option selected value="0">Configuració actual - Equipada el dd/mm/aaaa</option>
-                <option value="1">Configuració anterior - Des d'el dd/mm/aaaa al dd/mm/aaaa</option>
-                <option value="2">Configuració anterior - Des d'el dd/mm/aaaa al dd/mm/aaaa</option>
-                <option value="3">Configuració anterior - Des d'el dd/mm/aaaa al dd/mm/aaaa</option>
+                <option selected value="0">
+                  Configuració actual - Equipada el dd/mm/aaaa
+                </option>
+                <option value="1">
+                  Configuració anterior - Des d'el dd/mm/aaaa al dd/mm/aaaa
+                </option>
+                <option value="2">
+                  Configuració anterior - Des d'el dd/mm/aaaa al dd/mm/aaaa
+                </option>
+                <option value="3">
+                  Configuració anterior - Des d'el dd/mm/aaaa al dd/mm/aaaa
+                </option>
               </select>
             </div>
-            
+
             <div id="equipacioLabelEsquerra">
               <div id="separacio"></div>
               <div id="equipacioLabelEsquerraText">
-                <h3>El<br>Bombo</h3>
+                <h3>El<br />Bombo</h3>
                 <div id="tornar">
-                  <a href="./equipacio.html"><i class="fas fa-long-arrow-alt-left"></i><p>Tornar</p></a>
-                </div>
-              </div>
-              
-            </div>
-          </div>
-          <div id="via">
-            <div class="imatgeVia"><img src="" alt="" /></div>
-            <div class="infoVia">
-              <div id="dificultatVia">
-                <h1>DIFICULTAT</h1>
-                <div class="dificultat">
-                  <div></div>
-                  <div></div>
-                  <div></div>
-                  <div></div>
-                  <div></div>
-                  <div></div>
-                </div>
-              </div>
-              <div class="comentaris">
-                <p>COMENTARIS</p>
-                <label for="nouComentari" name="nouComentari"
-                  >Escriu aqui el teu comentari</label
-                >
-                <input id="nouComentari" type="text" />
-                <div class="comentarisUsuaris">
-                  <div class="comentariUsuari">
-                    <p class="usuari">juan</p>
-                    <p class="comentari">
-                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                      Quam amet repellat, labore sit eius laborum enim. Molestias
-                      autem, eius ut magnam sunt dolorum, consequuntur labore odit
-                      error vero et illo?
-                    </p>
-                  </div>
-                  <div class="comentariUsuari">
-                    <p class="usuari">manolo</p>
-                    <p class="comentari">
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. A
-                      illum quasi tempore voluptate earum voluptatibus. Fugit
-                      officia cupiditate possimus. Temporibus, necessitatibus
-                      explicabo velit distinctio iusto consequuntur consequatur
-                      tempore asperiores magnam?
-                    </p>
-                  </div>
-                  <div class="comentariUsuari">
-                    <p class="usuari">pepito</p>
-                    <p class="comentari">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Similique molestiae optio, dolor debitis delectus laudantium
-                      expedita rem veniam praesentium, a aperiam temporibus
-                      assumenda voluptates tempora odit! Ducimus doloremque
-                      debitis tempore?
-                    </p>
-                  </div>
-                  <div class="comentariUsuari">
-                    <p class="usuari">paco</p>
-                    <p class="comentari">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Error minima ut nostrum sit in totam, iure a consequuntur
-                      odit consequatur blanditiis praesentium incidunt eum nihil
-                      voluptate sapiente quod dignissimos perspiciatis.
-                    </p>
-                  </div>
-                  <div class="comentariUsuari">
-                    <p class="usuari">emilio</p>
-                    <p class="comentari">
-                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                      Dicta fugiat, architecto nam possimus fugit accusantium
-                      iusto, sunt totam ducimus quasi nesciunt odit veniam tempore
-                      facere sed culpa explicabo. Illo, reprehenderit?
-                    </p>
-                  </div>
-                  <div class="comentariUsuari">
-                    <p class="usuari">antonio</p>
-                    <p class="comentari">
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                      Ducimus pariatur similique, sunt vel voluptatum perferendis
-                      consectetur optio unde expedita quaerat illum explicabo
-                      earum vero tenetur natus impedit in officiis nihil!
-                    </p>
-                  </div>
+                  <a href="./equipacio.html"
+                    ><i class="fas fa-long-arrow-alt-left"></i>
+                    <p>Tornar</p></a
+                  >
                 </div>
               </div>
             </div>
           </div>
         </div>
-        
       </div>
     </div>
     <script type="text/javascript" src="script/main.js"></script>
