@@ -57,7 +57,6 @@ console.log(modalBombo);
 console.log(via);
 $(".imatgeBombo").click(function () {
   modalBombo.style.display = "block";
-  modalBombo = via;
 });
 // Get the <span> element that closes the modal
 var spanBombo = document.getElementsByClassName("closeBombo")[0];
