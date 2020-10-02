@@ -88,20 +88,12 @@ body {
   width: 40%;
   margin: 10px;
 }
-#mainEquipació {
-  background-color: #212223;
-  position: relative;
-  float: left;
-  display: flex;
-  flex-wrap: wrap;
-  width: 400px;
-  height: 400px;
-}
+
 #infoQuiSom,
 #infoTarifes,
 #infoActivitats,
 #infoGaleria,
-#infoMerch,
+#infoMerch,m
 #infoEquipacio,
 #infoBombo,
 #infoCova,
