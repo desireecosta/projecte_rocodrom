@@ -37,14 +37,19 @@ $(".imatgeMerch").click(function () {
   modalMerchImg.src = this.src;
   captionTextMerch.innerHTML = document.getElementsByClassName("captionMerch");
 });
+// Get the <span> element that closes the modal
+var spanMerch = document.getElementsByClassName("closeMerch")[0];
 
+// When the user clicks on <span> (x), close the modal
+$(".closeMerch").click(function () {
+  modalMerch.style.display = "none";
+});
 
-$(function(){
-
+$(function () {
   ////////////////////  MENU HAMBURGUESA OBRIR I TANCAR  ///////////////////
 
-  $("#hamburguesa").click(function(){
-    $("#menu").css("display","flex");
+  $("#hamburguesa").click(function () {
+    $("#menu").css("display", "flex");
     $("#mainQuiSom").hide();
     $("#imatgesQuiSom").hide();
     $("#hamburguesa").hide();
@@ -58,26 +63,24 @@ $(function(){
     $("#infoGaleria").hide();
     $("#infoMerch").hide();
     $("#infoTarifes").hide();
-    
   });
-  $("#tancar").click(function(){
+  $("#tancar").click(function () {
     $("#menu").hide();
     $("#mainQuiSom").show();
     $("#imatgesQuiSom").show();
     $("#hamburguesa").show();
     $("#activitats").show();
     $("#infoContacte").show();
-    $("#infoBombo").show()
-    $("#infoCova").show()
-    $("#infoPlaca").show()
-    $("#infoDesplom").show()
+    $("#infoBombo").show();
+    $("#infoCova").show();
+    $("#infoPlaca").show();
+    $("#infoDesplom").show();
     $("#mainEquipacio").show();
     $("#infoGaleria").show();
     $("#infoMerch").show();
     $("#infoTarifes").show();
-    
   });
-  
+
   ///////////////// MAX HEIGHT CONTAINERS  /////////////////////
 
   /*$("#mainQuiSom").css("max-height", $("#menu").css("height"));
