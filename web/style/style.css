@@ -1,182 +1,184 @@
 /* GENERAL */
 
-@font-face{
-	font-family: "Futura Bold";
+@font-face {
+  font-family: "Futura Bold";
   src: url("../asstets/tipos/Futura/FuturaBold.otf");
 }
 
-@font-face{
-	font-family: "Futura Medium";
-	src: url("../asstets/tipos/Futura/FuturaMedium.otf");
+@font-face {
+  font-family: "Futura Medium";
+  src: url("../asstets/tipos/Futura/FuturaMedium.otf");
 }
 
-@font-face{
-	font-family: "Mazzard H Regular";
-	src: url("../asstets/tipos/Mazzard/MazzardH-Regular.otf");
+@font-face {
+  font-family: "Mazzard H Regular";
+  src: url("../asstets/tipos/Mazzard/MazzardH-Regular.otf");
 }
 
-@font-face{
-	font-family: "Mazzard M Light";
-	src: url("../asstets/tipos/Mazzard/MazzardM-Light.otf");
+@font-face {
+  font-family: "Mazzard M Light";
+  src: url("../asstets/tipos/Mazzard/MazzardM-Light.otf");
 }
 
-@font-face{
-	font-family: "Mazzard M ExtraLight Italic";
-	src: url("../asstets/tipos/Mazzard/MazzardM-ExtraLightItalic.otf");
+@font-face {
+  font-family: "Mazzard M ExtraLight Italic";
+  src: url("../asstets/tipos/Mazzard/MazzardM-ExtraLightItalic.otf");
 }
 
-@font-face{
-	font-family: "Mazzard M Thin";
-	src: url("../asstets/tipos/Mazzard/MazzardM-Thin.otf");
+@font-face {
+  font-family: "Mazzard M Thin";
+  src: url("../asstets/tipos/Mazzard/MazzardM-Thin.otf");
 }
 
-:root{
-  --groc:#f2d45a;
+:root {
+  --groc: #f2d45a;
 }
 
-:root{
-  --blau:#1ebbb3;
+:root {
+  --blau: #1ebbb3;
 }
 
-:root{
-  --grisfosc:#212223;
+:root {
+  --grisfosc: #212223;
 }
 
-:root{
-  --grisclar:#bfbfbf;
+:root {
+  --grisclar: #bfbfbf;
 }
 
-:root{
-  --vermell:#f03645;
+:root {
+  --vermell: #f03645;
 }
 
-:root{
-  --taronja:#fb7d2c;
+:root {
+  --taronja: #fb7d2c;
 }
-:root{
-  --midaBordes:30px;
+:root {
+  --midaBordes: 30px;
 }
 
-*{
+* {
   font-family: "Mazzard M Thin";
   letter-spacing: 0.5px;
-  color:white;
+  color: white;
 }
-*::-webkit-scrollbar, #nav::-webkit-scrollbar{
+*::-webkit-scrollbar,
+#nav::-webkit-scrollbar {
   display: none;
 }
 
-body{
-  margin:0;
-  padding:0;
+body {
+  margin: 0;
+  padding: 0;
   background-color: var(--grisfosc);
 }
 
-#bordes{
-  width:100vw;
-  height:100vh;
+#bordes {
+  width: 100vw;
+  height: 100vh;
   background-color: var(--grisfosc);
-  margin:0;
+  margin: 0;
 }
 
-#bordeEsquerre{
+#bordeEsquerre {
   background-color: var(--blau);
-  position:fixed;
+  position: fixed;
   width: var(--midaBordes);
-  height:calc(100% - var(--midaBordes));
-  left:0;
-  bottom:0;
-  z-index:100;
+  height: calc(100% - var(--midaBordes));
+  left: 0;
+  bottom: 0;
+  z-index: 100;
 }
-#bordeDalt{
+#bordeDalt {
   background-color: var(--grisfosc);
-  position:fixed;
-  height:var(--midaBordes);
-  width:calc(100% - var(--midaBordes));
-  top:0;
-  left:0;
-  z-index:100;
+  position: fixed;
+  height: var(--midaBordes);
+  width: calc(100% - var(--midaBordes));
+  top: 0;
+  left: 0;
+  z-index: 100;
 }
-#bordeDret{
+#bordeDret {
   background-color: var(--vermell);
-  position:fixed;
+  position: fixed;
   width: var(--midaBordes);
-  height:calc(100% - var(--midaBordes));
-  right:0;
-  top:0;
-  z-index:100;
+  height: calc(100% - var(--midaBordes));
+  right: 0;
+  top: 0;
+  z-index: 100;
 }
-#bordeBaix{
+#bordeBaix {
   background-color: var(--groc);
-  position:fixed;
-  height:var(--midaBordes);
-  width:calc(100% - var(--midaBordes));
-  bottom:0;
-  right:0;
-  z-index:100;
+  position: fixed;
+  height: var(--midaBordes);
+  width: calc(100% - var(--midaBordes));
+  bottom: 0;
+  right: 0;
+  z-index: 100;
 }
 
-h1{
-  font-family: "Futura Bold",sans-serif;
-  font-size:100pt;
+h1 {
+  font-family: "Futura Bold", sans-serif;
+  font-size: 100pt;
   margin: 0 0 30px;
   line-height: 0.8;
 }
 
-h2{
+h2 {
   font-family: "Futura Medium", sans-serif;
   letter-spacing: 1.8px;
   font-size: 30pt;
-  margin:20px 0;
+  margin: 20px 0;
 }
 
-p{
+p {
   font-size: 16pt;
-  margin:10px 0;
+  margin: 10px 0;
 }
 
 /* MENU */
 
 #menu {
-  display:block;
-  position:relative;
+  display: block;
+  position: relative;
   background-color: rgba(191, 191, 191, 255);
   width: 300px;
   margin-left: 30px;
 }
 
-#hamburguesa{
-    width:100%;
-    margin:60px 0 0 60px;
-    font-size:30pt;
-    display:none;
-  }
-  
-  #hamburguesa i:hover, #hamburguesa label:hover{
-    cursor: pointer;
-  }
-  
-  #hamburguesa i{
-    font-size:50pt;
-  }
-  #hamburguesa label{
-    font-size:30pt;
-    margin: 15px 0 0 30px;
-    font-family: "Mazzard H Regular";
-  }
-
-#tancar{
-  position: absolute;
-  top:40px;
-  left:40px;
-  z-index: 101;
-  display:none;
+#hamburguesa {
+  width: 100%;
+  margin: 60px 0 0 60px;
+  font-size: 30pt;
+  display: none;
 }
-#tancar i{
-  font-size:40px;
+
+#hamburguesa i:hover,
+#hamburguesa label:hover {
+  cursor: pointer;
+}
+
+#hamburguesa i {
+  font-size: 50pt;
+}
+#hamburguesa label {
+  font-size: 30pt;
+  margin: 15px 0 0 30px;
+  font-family: "Mazzard H Regular";
+}
+
+#tancar {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  z-index: 101;
+  display: none;
+}
+#tancar i {
+  font-size: 40px;
   color: var(--grisfosc);
 }
-#tancar:hover{
+#tancar:hover {
   cursor: pointer;
 }
 
@@ -188,44 +190,44 @@ p{
 
 #nav a {
   font-family: "Mazzard H Regular", sans-serif;
-  font-size:16pt;
+  font-size: 16pt;
   text-align: right;
   color: rgba(33, 34, 36, 255);
   text-decoration: none;
   padding: 5% 10%;
-  margin:5px 10px;
+  margin: 5px 10px;
 }
 
-#nav .currentLink,#nav a:hover{
+#nav .currentLink,
+#nav a:hover {
   background-color: rgba(33, 34, 36, 255);
   color: white;
 }
 
-
 /* LOGO IMG */
 
-
-.logo{
+.logo {
   position: relative;
 }
 #logo {
   width: 150px;
   height: 150px;
-  margin:80px 25% 40px;
+  margin: 80px 25% 40px;
 }
-.logo h4, .logo p{
-  margin:0 0 0 20px;
+.logo h4,
+.logo p {
+  margin: 0 0 0 20px;
 }
-.logo h4{
-  font-family: "Futura Bold",sans-serif;
-  font-size:41pt;
-  color:var(--grisfosc);
+.logo h4 {
+  font-family: "Futura Bold", sans-serif;
+  font-size: 41pt;
+  color: var(--grisfosc);
 }
-.logo p{
-  margin-top:-20px;
-  font-family:"Futura Medium",sans-serif;
-  font-size:22pt;
-  color:var(--grisfosc);
+.logo p {
+  margin-top: -20px;
+  font-family: "Futura Medium", sans-serif;
+  font-size: 22pt;
+  color: var(--grisfosc);
 }
 
 /*  
@@ -234,23 +236,23 @@ Menu Xarxes Socials
 
 */
 
-#xxss{
-  width:100%;
+#xxss {
+  width: 100%;
   display: flex;
   position: relative;
   justify-content: flex-end;
   align-items: center;
-  height:100px;
-  margin-top:35px;
+  height: 100px;
+  margin-top: 35px;
 }
 
-.fab{
+.fab {
   font-size: 35px;
   margin-left: 20px;
   color: var(--grisfosc);
 }
-#xxss .fa-instagram{
-  margin-right:40px;
+#xxss .fa-instagram {
+  margin-right: 40px;
 }
 
 /*
@@ -260,8 +262,8 @@ Idiomes menu
 */
 
 #idiomes {
-  position:relative;
-  display:flex;
+  position: relative;
+  display: flex;
   align-items: center;
   justify-content: flex-end;
   height: 80px;
@@ -269,36 +271,34 @@ Idiomes menu
   background-color: var(--grisfosc);
 }
 
-#idiomes p{
+#idiomes p {
   font-family: "Mazzard H Regular";
   font-size: 16pt;
   color: white;
   margin-right: 20px;
 }
 
-#selectorIdiomes a{
+#selectorIdiomes a {
   font-family: "Mazzard H Regular";
   font-size: 12pt;
-  padding:10px;
+  padding: 10px;
   background-color: rgba(33, 34, 36, 255);
   color: var(--grisclar);
   text-decoration: none;
 }
 
-#selectorIdiomes a.currentLink, #selectorIdiomes a:hover{
+#selectorIdiomes a.currentLink,
+#selectorIdiomes a:hover {
   background-color: var(--grisclar);
   color: var(--grisfosc);
-  
 }
 
 /* LANDING PAGE*/
 
-#rrss .fab{
+/* #rrss .fab {
   color: var(--grisclar);
   font-size: 40pt;
-}
-
-
+} */
 
 #fletxaHome {
   width: 300px;
@@ -343,7 +343,16 @@ Idiomes menu
   height: 100%;
 }
 
-#activitats, #infoContacte, #infoBombo, #infoCova, #infoPlaca, #infoDesplom, #mainEquipacio, #infoGaleria, #infoMerch, #infoTarifes {
+#activitats,
+#infoContacte,
+#infoBombo,
+#infoCova,
+#infoPlaca,
+#infoDesplom,
+#mainEquipacio,
+#infoGaleria,
+#infoMerch,
+#infoTarifes {
   max-width: calc(100% - 360px);
   padding: 60px 0 60px 60px;
   box-sizing: border-box;
@@ -352,11 +361,10 @@ Idiomes menu
 #mainQuiSom {
   padding: 60px 0 60px 60px;
   max-width: 800px;
-  width:50%;
+  width: 50%;
 }
 
-#mainQuiSom,
-{
+#mainQuiSom {
   width: 40%;
   margin: 10px;
 }
@@ -365,8 +373,8 @@ Idiomes menu
 #infoTarifes,
 #infoActivitats,
 #infoGaleria,
-#infoMerch,m
-#infoEquipacio,
+#infoMerch,
+m #infoEquipacio,
 #infoBombo,
 #infoCova,
 #infoDesplom,
@@ -397,7 +405,7 @@ Idiomes menu
   margin: 50px auto;
   display: flex;
   flex-wrap: wrap;
-  max-width:30%;
+  max-width: 30%;
 }
 
 #imatgesQuiSom img {
@@ -405,8 +413,8 @@ Idiomes menu
   border: 5px solid #bfbfbf;
   max-width: 200px;
   max-height: 200px;
-  width:100%;
-  height:100%;
+  width: 100%;
+  height: 100%;
 }
 
 /*#imatgesgaleria img {
@@ -480,12 +488,15 @@ Idiomes menu
   height: 20px;
 }
 
-#infoGaleria,
 #infoMerch {
   width: 70%;
   margin: auto;
   display: flex;
   flex-wrap: wrap;
+}
+#infoGaleria {
+  width: 70%;
+  margin: auto;
 }
 
 #galeriaContainer,
@@ -653,7 +664,6 @@ Idiomes menu
   width: 50px;
   margin: 10px;
 }
-
 #zones {
   display: flex;
   flex-wrap: wrap;
@@ -762,117 +772,129 @@ Idiomes menu
 
 @media only screen and (max-width: 1715px) {
   #imatgesQuiSom img {
-    max-width:130px;
-    max-height:130px;
-    width:100%;
-    height:100%;
+    max-width: 130px;
+    max-height: 130px;
+    width: 100%;
+    height: 100%;
     margin: 0 auto;
   }
-  #imatgesQuiSom{
-    max-width:15%;
+  #imatgesQuiSom {
+    max-width: 15%;
   }
-  
 }
 
 @media only screen and (max-width: 1325px) {
-  #bordeEsquerre, #bordeDalt, #bordeDret, #bordeBaix{
-    display:none;
-  }
-  #bordes{
-    width:100%;
-    height:100%;
-  }
-  #menu{
-    display:flex;
-    flex-wrap: wrap;
-    width:100vw;
-    margin:0;
-  }
-  #idiomes{
-    height:150px;
-    margin-bottom: 0;
-  }
-  #selectorIdiomes a{
-    font-size:20px;
-    padding:20px;
-    margin-left: 10px;
-  }
-  #selectorIdiomes:last-child{
-    margin-right:30px;
-  }
-  #xxss{
-    height:150px;
-    margin-top:85px;
-  }
-  .fab{
-    font-size: 60px;
-    margin-left:35px;
-  }
-  #xxss .fa-instagram{
-    margin-right:45px;
-  }
-  .logo::-webkit-scrollbar, #nav::-webkit-scrollbar{
+  #bordeEsquerre,
+  #bordeDalt,
+  #bordeDret,
+  #bordeBaix {
     display: none;
   }
-  .logo{
+  #bordes {
+    width: 100%;
+    height: 100%;
+  }
+  #menu {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100vw;
+    margin: 0;
+  }
+  #idiomes {
+    height: 150px;
+    margin-bottom: 0;
+  }
+  #selectorIdiomes a {
+    font-size: 20px;
+    padding: 20px;
+    margin-left: 10px;
+  }
+  #selectorIdiomes:last-child {
+    margin-right: 30px;
+  }
+  #xxss {
+    height: 150px;
+    margin-top: 85px;
+  }
+  .fab {
+    font-size: 60px;
+    margin-left: 35px;
+  }
+  #xxss .fa-instagram {
+    margin-right: 45px;
+  }
+  .logo::-webkit-scrollbar,
+  #nav::-webkit-scrollbar {
+    display: none;
+  }
+  .logo {
     height: 680px;
-    width:400px;
+    width: 400px;
     overflow: scroll;
     z-index: 100;
     padding: 0 0 0 75px;
     margin-right: 50px;
   }
-  #logo{
+  #logo {
     margin: 200px 40px 0 110px;
-    width:300px;
-    height:300px;
+    width: 300px;
+    height: 300px;
   }
-  .logo h4{
+  .logo h4 {
     font-size: 63pt;
-    margin:0;
+    margin: 0;
   }
-  .logo p{
-    font-size:35pt;
-    margin-top:-30px;
-    margin-left:0;
+  .logo p {
+    font-size: 35pt;
+    margin-top: -30px;
+    margin-left: 0;
   }
-  #nav{
+  #nav {
     height: 680px;
     overflow: scroll;
     z-index: 100;
-    width:40%;
+    width: 40%;
     margin: 0 auto;
     padding: 80px 0 0;
     box-sizing: border-box;
   }
-  #nav a{
+  #nav a {
     margin: 0 0 20px;
-    padding:20px 0;
+    padding: 20px 0;
     text-align: center;
     width: 100%;
   }
 
-  #menu{
-    display:none;
+  #menu {
+    display: none;
   }
-  #tancar{
-    display:block;
+  #tancar {
+    display: block;
   }
-  #hamburguesa{
-    display:flex;
+  #hamburguesa {
+    display: flex;
   }
 
   #imatgesQuiSom img {
     margin: 10px auto;
-    max-width:200px;
-    max-height:200px;
-    width:100%;
-    height:100%;
+    max-width: 200px;
+    max-height: 200px;
+    width: 100%;
+    height: 100%;
   }
-  #imatgesQuiSom{
-    max-width:30%;
+  #imatgesQuiSom {
+    max-width: 30%;
   }
-  #activitats, #infoContacte, #infoBombo, #infoCova, #infoPlaca, #infoDesplom, #mainEquipacio, #infoGaleria, #infoMerch, #infoTarifes {
+  #activitats,
+  #infoContacte,
+  #infoBombo,
+  #infoCova,
+  #infoPlaca,
+  #infoDesplom,
+  #mainEquipacio,
+  #infoGaleria,
+  #infoMerch,
+  #infoTarifes {
     padding: 60px;
     max-width: none;
     height: auto;
@@ -891,88 +913,89 @@ Idiomes menu
 }
 
 @media only screen and (max-width: 900px) {
-  #menu{
-    height:auto;
+  #menu {
+    height: auto;
   }
-  .logo{
+  .logo {
     margin: 0;
     padding: 0;
-    width:100%;
-    height:auto;
+    width: 100%;
+    height: auto;
   }
-  #logo{
-    width:100%;
-    margin:60px 0 20px;
+  #logo {
+    width: 100%;
+    margin: 60px 0 20px;
   }
-  .logo h4{
+  .logo h4 {
     margin: 0 auto;
     width: 400px;
   }
-  .logo p{
+  .logo p {
     width: 400px;
     margin: -30px auto 0;
   }
-  #nav{
+  #nav {
     height: auto;
-    width:100%;
+    width: 100%;
     margin: 50px auto 0;
     padding: 0 60px;
   }
-  #xxss{
+  #xxss {
     position: relative;
-    height:60px;
+    height: 60px;
     display: block;
-    width:auto;
+    width: auto;
     margin: 30px auto;
   }
-  #idiomes{
+  #idiomes {
     position: relative;
-    height:150px;
+    height: 150px;
     display: flex;
     margin: 0 auto;
     justify-content: center;
   }
-  #selectorIdiomes a{
-    font-size:20px;
-    padding:20px;
+  #selectorIdiomes a {
+    font-size: 20px;
+    padding: 20px;
     margin-left: 10px;
   }
-  #selectorIdiomes:last-child{
-    margin-right:30px;
+  #selectorIdiomes:last-child {
+    margin-right: 30px;
   }
-  #hamburguesa{
-    margin:45px 0 15px 30px;
+  #hamburguesa {
+    margin: 45px 0 15px 30px;
   }
-  #hamburguesa label{
-    font-size:25pt;
+  #hamburguesa label {
+    font-size: 25pt;
   }
-  #hamburguesa i{
-    font-size:35pt;
+  #hamburguesa i {
+    font-size: 35pt;
   }
-  #quiSomAll{
-    height:auto;
+  #quiSomAll {
+    height: auto;
   }
   #mainQuiSom {
-    width:100%;
+    width: 100%;
     padding: 30px;
   }
-  #infoQuiSom, #imatgesQuiSom{
-    width:100%;
+  #infoQuiSom,
+  #imatgesQuiSom {
+    width: 100%;
     max-width: 100%;
   }
-  #imatgesQuiSom{
-    margin-top:15px;
+  #imatgesQuiSom {
+    margin-top: 15px;
     justify-content: center;
   }
   #imatgesQuiSom img {
-    margin:0;
-    max-width:250px;
-    max-height:250px;
+    margin: 0;
+    max-width: 250px;
+    max-height: 250px;
   }
-  h1{
+  h1 {
     margin: 0 0 50px;
   }
-  h2{
+  h2 {
     margin: 40px 0;
   }
 
@@ -999,4 +1022,11 @@ Idiomes menu
   .merchContent img {
     width: 80%;
   }
+}
+
+#form div {
+  margin: 10px auto;
+}
+.enviarFormulari input {
+  color: black;
 }
