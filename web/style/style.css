@@ -552,14 +552,15 @@ m #infoEquipacio,
 }
 
 /* ////////////////////////////////////////////////////////////////////////////////////// */
-/* //////////           ENLARGE IMAGE TEST 2             //////////// */
+/* //////////           MODALS            //////////// */
 /* ////////////////////////////////////////////////////////////////////////////////////// */
 
 /* The Modal (background) */
 .modalGaleria,
 .modalMerch,
 .modalBombo,
-.modalCova {
+.modalCova,
+.modalDesplom {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
@@ -631,7 +632,8 @@ m #infoEquipacio,
 /* The Close Button */
 .closeGaleria,
 .closeMerch,
-.closeBombo {
+.closeBombo,
+.closeDesplom {
   position: absolute;
   top: 15px;
   right: 35px;
@@ -648,7 +650,8 @@ m #infoEquipacio,
 .closeBombo:hover,
 .clsoeBombo:focus,
 .closeCova:hover,
-.closeCova:focus {
+.closeCova:focus .closeDesplom:hover,
+.closeDesplom:focus {
   color: #bbb;
   text-decoration: none;
   cursor: pointer;

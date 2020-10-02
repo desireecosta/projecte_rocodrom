@@ -1,4 +1,8 @@
+/////////////////////////////
+
 //MODAL GALERIA
+
+/////////////////////////////
 
 // Get the modal
 var modalGaleria = document.getElementById("myModalGaleria");
@@ -21,9 +25,11 @@ $(".closeGaleria").click(function () {
   modalGaleria.style.display = "none";
 });
 
-/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////
 
 //MODAL MERCH
+
+/////////////////////////////
 
 // Get the modal
 var modalMerch = document.getElementById("myModalMerch");
@@ -46,7 +52,11 @@ $(".closeMerch").click(function () {
   modalMerch.style.display = "none";
 });
 
+/////////////////////////////
+
 //MODAL BOMBO
+
+/////////////////////////////
 
 // Get the modal
 var modalBombo = document.getElementById("myModalBombo");
@@ -64,15 +74,17 @@ $(".closeBombo").click(function () {
   modalBombo.style.display = "none";
 });
 
+/////////////////////////////
+
 //MODAL COVA
+
+/////////////////////////////
 
 // Get the modal
 var modalCova = document.getElementById("myModalCova");
 // Get the image and insert it inside the modal - use its "alt" text as a caption
 var imatgeCova = document.getElementsByClassName("imatgeCova");
 var viaCova = document.getElementsByClassName("viaCova");
-console.log(modalCova);
-console.log(viaCova);
 $(".imatgeCova").click(function () {
   modalCova.style.display = "block";
 });
@@ -84,9 +96,32 @@ $(".closeCova").click(function () {
   modalCova.style.display = "none";
 });
 
-$(function () {
-  ////////////////////  MENU HAMBURGUESA OBRIR I TANCAR  ///////////////////
+/////////////////////////////
 
+//MODAL DESPLOM
+
+/////////////////////////////
+
+// Get the modal
+var modalDesplom = document.getElementById("myModalDesplom");
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var imatgeDesplom = document.getElementsByClassName("imatgeDesplom");
+var viaDesplom = document.getElementsByClassName("viaDesplom");
+console.log(modalDesplom);
+console.log(viaDesplom);
+$(".imatgeDesplom").click(function () {
+  modalDesplom.style.display = "block";
+});
+// Get the <span> element that closes the modal
+var spanDesplom = document.getElementsByClassName("closeDesplom")[0];
+
+// When the user clicks on <span> (x), close the modal
+$(".closeDesplom").click(function () {
+  modalDesplom.style.display = "none";
+});
+
+////////////////////  MENU HAMBURGUESA OBRIR I TANCAR  ///////////////////
+$(function () {
   $("#hamburguesa").click(function () {
     $("#menu").css("display", "flex");
     $("#mainQuiSom").hide();
