@@ -558,7 +558,8 @@ m #infoEquipacio,
 /* The Modal (background) */
 .modalGaleria,
 .modalMerch,
-.modalBombo {
+.modalBombo,
+.modalCova {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
@@ -645,7 +646,9 @@ m #infoEquipacio,
 .closeMerch:hover,
 .closeMerch:focus,
 .closeBombo:hover,
-.clsoeBombo:focus {
+.clsoeBombo:focus,
+.closeCova:hover,
+.closeCova:focus {
   color: #bbb;
   text-decoration: none;
   cursor: pointer;

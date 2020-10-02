@@ -52,9 +52,7 @@ $(".closeMerch").click(function () {
 var modalBombo = document.getElementById("myModalBombo");
 // Get the image and insert it inside the modal - use its "alt" text as a caption
 var imatgeBombo = document.getElementsByClassName("imatgeBombo");
-var via = document.getElementsByClassName("via");
-console.log(modalBombo);
-console.log(via);
+var viaBombo = document.getElementsByClassName("viaBombo");
 $(".imatgeBombo").click(function () {
   modalBombo.style.display = "block";
 });
@@ -64,6 +62,26 @@ var spanBombo = document.getElementsByClassName("closeBombo")[0];
 // When the user clicks on <span> (x), close the modal
 $(".closeBombo").click(function () {
   modalBombo.style.display = "none";
+});
+
+//MODAL COVA
+
+// Get the modal
+var modalCova = document.getElementById("myModalCova");
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var imatgeCova = document.getElementsByClassName("imatgeCova");
+var viaCova = document.getElementsByClassName("viaCova");
+console.log(modalCova);
+console.log(viaCova);
+$(".imatgeCova").click(function () {
+  modalCova.style.display = "block";
+});
+// Get the <span> element that closes the modal
+var spanCova = document.getElementsByClassName("closeCova")[0];
+
+// When the user clicks on <span> (x), close the modal
+$(".closeCova").click(function () {
+  modalCova.style.display = "none";
 });
 
 $(function () {
