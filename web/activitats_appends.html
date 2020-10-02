@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="button" value="boto" id="boto">
+    <div id="capa"></div>
+    <script language="javascript">
+        $(function(){
+            $("#boto").click(function () {
+                $.get("http://localhost:3000/activities?TranslationID=1", function (data, status) {
+                    var i = 0;
+                    for (i = 0; i < data.length; i++){
+                        var cont= "<div id='activitat" + [i] + "'><h2>" + data[i].CategoryName +"</h2>"+"<p>"+data[i].ActivityTime +"<p>"+"<h3>" + data[i].ActivityDuration + "</h3>";
+                        if(data[i].ActivityDescription){
+                            cont = cont + "<p>" + data[i].ActivityPrice + "<p>";
+                        }
+                        if(data[i].ActivityPrice){
+                            cont= cont + "<h3>"+ data[i].ActivityDescription +"<h3>";
+                        }
+                        cont = cont + "</div>";
+                        $("#capa").append(cont);
+
+
+
+                        /*if (typeof (data[i].ActivityDescription) == "undefined" && typeof (data[i].ActivityPrice) == "undefined") {
+                            $("#capa").append(
+                                "<div id='activitat" + [i] + "'>" +
+                                "<h2>" + data[i].CategoryName + "</h2>" +
+                                "<p>"+data[i].ActivityTime+"<p>"+
+                                "<h3>" + data[i].ActivityDuration + "</h3>" + "</div>"
+                            );
+                        }       
+                        else if (typeof (data[i].ActivityDescription) != "undefined" && typeof (data[i].ActivityPrice) == "undefined") {
+                            $("#capa").append(
+                                "<div id='activitat" + [i] + "'>" +
+                                "<h2>" + data[i].CategoryName + "</h2>" +
+                                "<h3>" + data[i].ActivityDescription + "</h3>" +
+                                "<p>"+data[i].ActivityTime+"<p>"+
+                                "<h3>" + data[i].ActivityDuration + "</h3>" +
+                                "</div>"
+                            );
+                        }
+                        else if (typeof (data[i].ActivityDescription) != "undefined" && typeof (data[i].ActivityPrice) != "undefined") {
+                            $("#capa").append(
+                                "<div id='activitat" + [i] + "'>" +
+                                "<h2>" + data[i].CategoryName + "</h2>" +
+                                "<h3>" + data[i].ActivityDescription + "</h3>" +
+                                "<p>"+data[i].ActivityTime +"<p>"+
+                                "<p>"+data[i].ActivityPrice +"<p>"+
+                                "<h3>" + data[i].ActivityDuration + "</h3>" +
+                                "</div>"
+                            );
+                        }
+                        else if (typeof (data[i].ActivityDescription) == "undefined" && typeof (data[i].ActivityPrice) != "undefined") {
+                            $("#capa").append(
+                                "<div id='activitat" + [i] + "'>" +
+                                "<h2>" + data[i].CategoryName + "</h2>" +
+                                "<h3>" + data[i].ActivityDescription + "</h3>" +
+                                "<p>"+data[i].ActivityTime +"<p>"+
+                                "<p>"+data[i].Activity.Price +"<p>"+
+                                "<h3>" + data[i].ActivityDuration + "</h3>" +
+                                "</div>"
+                            );
+                        };*/
+                    };
+                });
+            });
+
+        });
+    </script>
+</body>
+
+</html>
