@@ -107,8 +107,6 @@ var modalDesplom = document.getElementById("myModalDesplom");
 // Get the image and insert it inside the modal - use its "alt" text as a caption
 var imatgeDesplom = document.getElementsByClassName("imatgeDesplom");
 var viaDesplom = document.getElementsByClassName("viaDesplom");
-console.log(modalDesplom);
-console.log(viaDesplom);
 $(".imatgeDesplom").click(function () {
   modalDesplom.style.display = "block";
 });
@@ -118,6 +116,28 @@ var spanDesplom = document.getElementsByClassName("closeDesplom")[0];
 // When the user clicks on <span> (x), close the modal
 $(".closeDesplom").click(function () {
   modalDesplom.style.display = "none";
+});
+
+/////////////////////////////
+
+//MODAL PLACA
+
+/////////////////////////////
+
+// Get the modal
+var modalPlaca = document.getElementById("myModalPlaca");
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var imatgePlaca = document.getElementsByClassName("imatgePlaca");
+var viaPlaca = document.getElementsByClassName("viaPlaca");
+$(".imatgePlaca").click(function () {
+  modalPlaca.style.display = "block";
+});
+// Get the <span> element that closes the modal
+var spanPlaca = document.getElementsByClassName("closePlaca")[0];
+
+// When the user clicks on <span> (x), close the modal
+$(".closePlaca").click(function () {
+  modalPlaca.style.display = "none";
 });
 
 ////////////////////  MENU HAMBURGUESA OBRIR I TANCAR  ///////////////////

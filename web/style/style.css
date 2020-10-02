@@ -374,7 +374,7 @@ Idiomes menu
 #infoActivitats,
 #infoGaleria,
 #infoMerch,
-m #infoEquipacio,
+#infoEquipacio,
 #infoBombo,
 #infoCova,
 #infoDesplom,
@@ -560,7 +560,8 @@ m #infoEquipacio,
 .modalMerch,
 .modalBombo,
 .modalCova,
-.modalDesplom {
+.modalDesplom,
+.modalPlaca {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
@@ -633,7 +634,8 @@ m #infoEquipacio,
 .closeGaleria,
 .closeMerch,
 .closeBombo,
-.closeDesplom {
+.closeDesplom,
+.closePlaca {
   position: absolute;
   top: 15px;
   right: 35px;
@@ -650,8 +652,11 @@ m #infoEquipacio,
 .closeBombo:hover,
 .clsoeBombo:focus,
 .closeCova:hover,
-.closeCova:focus .closeDesplom:hover,
-.closeDesplom:focus {
+.closeCova:focus,
+.closeDesplom:hover,
+.closeDesplom:focus,
+.closePlaca:hover,
+.closePlaca:focus {
   color: #bbb;
   text-decoration: none;
   cursor: pointer;
