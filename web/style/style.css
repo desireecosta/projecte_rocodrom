@@ -62,8 +62,11 @@
   letter-spacing: 0.5px;
   color:white;
 }
-*::-webkit-scrollbar, #nav::-webkit-scrollbar{
+*::-webkit-scrollbar{
   display: none;
+}
+#galeriaContainer::-webkit-scrollbar{
+  display: initial;
 }
 
 body{
@@ -344,6 +347,7 @@ Idiomes menu
 }
 
 #activitats, #infoContacte, #infoBombo, #infoCova, #infoPlaca, #infoDesplom, #mainEquipacio, #infoGaleria, #infoMerch, #infoTarifes {
+  max-height: 1000px;
   max-width: calc(100% - 360px);
   padding: 60px 0 60px 60px;
   box-sizing: border-box;
@@ -355,17 +359,11 @@ Idiomes menu
   width:50%;
 }
 
-#mainQuiSom,
-{
-  width: 40%;
-  margin: 10px;
-}
-
 #infoQuiSom,
 #infoTarifes,
 #infoActivitats,
 #infoGaleria,
-#infoMerch,m
+#infoMerch,
 #infoEquipacio,
 #infoBombo,
 #infoCova,
@@ -465,11 +463,16 @@ Idiomes menu
 }
 
 #infoActivitats,
-#infoEquipació {
+#infoEquipacio {
   display: flex;
   flex-wrap: wrap;
-  padding: 1%;
 }
+
+#infoEquipacio {
+  justify-content: space-between;
+}
+
+
 
 .imatgeTeles,
 .imatgeTrapezzi,
@@ -496,6 +499,10 @@ Idiomes menu
   overflow-y: scroll;
   height: 70%;
   max-height: 700px;
+}
+
+#infoGaleria h1, #infoGaleria h2{
+  display: block;
 }
 
 /* width */
@@ -657,29 +664,27 @@ Idiomes menu
 #zones {
   display: flex;
   flex-wrap: wrap;
-  width: 50%;
-  margin: auto;
+  width: 700px;
 }
 
-#bombo,
-#cova,
-#placa,
-#desplom {
-  width: 300px;
-  margin: 10% auto;
+#zones p{
+  font-family: "Mazzard M ExtraLight Italic";
 }
-#bombo img,
-#cova img,
-#placa img,
-#desplom img {
-  width: 200px;
+
+#mainEquipacio h1{
+  margin-bottom: 70px;
+}
+
+.zona {
+  width: 300px;
+  margin: 0 auto 40px 0;
+}
+.zona img {
+  width: 250px;
   border: 5px solid #bfbfbf;
   float: left;
 }
-#bombo p,
-#cova p,
-#placa p,
-#desplom p {
+.zona p {
   writing-mode: vertical-rl;
   text-orientation: mixed;
   color: white;
@@ -696,13 +701,91 @@ Idiomes menu
 .vies {
   display: flex;
   flex-wrap: wrap;
-  margin: 10% auto;
 }
 
 .vies img {
   border: 5px solid #bfbfbf;
   width: 300px;
   margin: auto;
+}
+
+#viesImatges{
+  width:auto;
+  overflow-y: scroll;
+  display:flex;
+  flex-wrap: wrap;
+  height:573px;
+  justify-content: flex-start;
+
+}
+.datesConfiguracions{
+  font-family: "Mazzard H Regular";
+  font-size: 16pt;
+  background-color: var(--grisclar);
+  padding: 0 30px;
+  width:100%;
+  height:80px;
+  color:black;
+}
+#viesInfo p{
+  margin: 30px 0;
+}
+
+#grogues{
+  color: var(--groc);
+}
+#blaves{
+  color: var(--blau);
+}
+#taronges{
+  color: var(--taronja);
+}
+#vermelles{
+  color: var(--vermell);
+}
+
+
+#viesImatges::-webkit-scrollbar{
+  display: initial;
+}
+
+#separacio{
+  width:10px;
+  background-color:white;
+  margin: 0 10%;
+}
+
+
+#tornar p{
+  font-family: "Mazzard M Light";
+  font-size: 10pt;
+  display: inline-block;
+  margin-left: 10px;
+  margin-top: -5px;
+
+}
+
+#equipacioLabelEsquerra{
+  display:flex;
+  flex-wrap:wrap;
+  margin-right:20px;
+  width:100%;
+  max-width:270px;
+}
+
+#equipacioLabelEsquerra h3, #equipacioLabelTop h3{
+  font-family: "Mazzard H Regular";
+  font-size: 30pt;
+  margin: 0px;
+}
+
+#equipacioLabelTop h3{
+  display:none;
+  margin-bottom: 30px;;
+}
+
+#containerVies{
+  display:flex;
 }
 
 #infoBombo a,
@@ -722,6 +805,9 @@ Idiomes menu
 
 .via {
   border: 5px solid #bfbfbf;
+}
+#via{
+  display: none;
 }
 
 #contactes {
@@ -811,9 +897,6 @@ Idiomes menu
   #xxss .fa-instagram{
     margin-right:45px;
   }
-  .logo::-webkit-scrollbar, #nav::-webkit-scrollbar{
-    display: none;
-  }
   .logo{
     height: 680px;
     width:400px;
@@ -888,9 +971,23 @@ Idiomes menu
     flex-wrap: wrap;
     overflow: auto;
   }
+  #infoGaleria,
+  #infoMerch {
+    width: 100%;
+  }
+  #equipacioLabelTop h3{
+    display:block;
+  }
+  #equipacioLabelEsquerra{
+    display:none;
+  }
 }
 
 @media only screen and (max-width: 900px) {
+
+  h1{
+    font-size:90px;
+  }
   #menu{
     height:auto;
   }
@@ -983,6 +1080,24 @@ Idiomes menu
   .galeriaImatge img,
   .merchContent img {
     width: 80%;
+  }
+  #infoGaleria h1, #infoMerch h1{
+    margin: 0;
+  }
+  .zona {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 40px;
+  }
+  .zona img {
+    width: 80%;
+    border: 5px solid #bfbfbf;
+  }
+  .zona p {
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    color: white;
+    font-size:30pt;
   }
 }
 
