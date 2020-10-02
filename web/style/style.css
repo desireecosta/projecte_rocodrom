@@ -65,7 +65,7 @@
 *::-webkit-scrollbar{
   display: none;
 }
-#galeriaContainer::-webkit-scrollbar{
+#galeriaContainer::-webkit-scrollbar, #viesImatges::-webkit-scrollbar, #merchContainer::-webkit-scrollbar{
   display: initial;
 }
 
@@ -474,13 +474,20 @@ Idiomes menu
 #infoEquipacio {
   justify-content: space-between;
 }
-#galeriaContainer,#merchContainer {
+#galeriaContainer{
   margin: 50px auto;
   display: flex;
   flex-wrap: wrap;
   overflow-y: scroll;
   height: 70%;
   max-height: 700px;
+}
+#merchContainer {
+  margin: 50px auto;
+  display: flex;
+  flex-wrap: wrap;
+  overflow-y: scroll;
+  max-height: 775px;
 }
 
 #infoGaleria h1, #infoGaleria h2{
@@ -747,11 +754,6 @@ Idiomes menu
 }
 #vermelles{
   color: var(--vermell);
-}
-
-
-#viesImatges::-webkit-scrollbar{
-  display: initial;
 }
 
 #separacio{
@@ -1140,11 +1142,13 @@ Idiomes menu
   #merchContainer {
     height: auto;
     max-height: none;
-    margin: 50px auto;
+    margin: 50px auto 0;
     display: flex;
     flex-wrap: wrap;
     overflow: auto;
   }
+
+
   #infoGaleria,
   #infoMerch {
     width: 100%;
