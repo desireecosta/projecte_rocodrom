@@ -37,12 +37,34 @@ $(".imatgeMerch").click(function () {
   modalMerchImg.src = this.src;
   captionTextMerch.innerHTML = document.getElementsByClassName("captionMerch");
 });
+
 // Get the <span> element that closes the modal
 var spanMerch = document.getElementsByClassName("closeMerch")[0];
 
 // When the user clicks on <span> (x), close the modal
 $(".closeMerch").click(function () {
   modalMerch.style.display = "none";
+});
+
+//MODAL BOMBO
+
+// Get the modal
+var modalBombo = document.getElementById("myModalBombo");
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var imatgeBombo = document.getElementsByClassName("imatgeBombo");
+var via = document.getElementsByClassName("via");
+console.log(modalBombo);
+console.log(via);
+$(".imatgeBombo").click(function () {
+  modalBombo.style.display = "block";
+  modalBombo = via;
+});
+// Get the <span> element that closes the modal
+var spanBombo = document.getElementsByClassName("closeBombo")[0];
+
+// When the user clicks on <span> (x), close the modal
+$(".closeBombo").click(function () {
+  modalBombo.style.display = "none";
 });
 
 $(function () {

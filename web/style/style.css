@@ -557,7 +557,8 @@ m #infoEquipacio,
 
 /* The Modal (background) */
 .modalGaleria,
-.modalMerch {
+.modalMerch,
+.modalBombo {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
@@ -628,7 +629,8 @@ m #infoEquipacio,
 
 /* The Close Button */
 .closeGaleria,
-.closeMerch {
+.closeMerch,
+.closeBombo {
   position: absolute;
   top: 15px;
   right: 35px;
@@ -639,9 +641,11 @@ m #infoEquipacio,
 }
 
 .closeGaleria:hover,
-.closeMerch:hover,
 .closeGaleria:focus,
-.closeMerch:focus {
+.closeMerch:hover,
+.closeMerch:focus,
+.closeBombo:hover,
+.clsoeBombo:focus {
   color: #bbb;
   text-decoration: none;
   cursor: pointer;
@@ -1054,10 +1058,4 @@ m #infoEquipacio,
 
 textarea {
   height: 300px;
-}
-
-.FormText {
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
 }
