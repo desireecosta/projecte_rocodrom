@@ -1023,10 +1023,41 @@ m #infoEquipacio,
     width: 80%;
   }
 }
-
+#formulariContacte {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-content: space-around;
+  width: 70%;
+}
 #form div {
-  margin: 10px auto;
+  margin: 1% auto;
+}
+#form div label {
+  display: inline-block;
+  font-weight: bold;
+  width: 20%;
+}
+#form div input,
+#form div textarea {
+  font-weight: lighter;
+  color: #212223;
+  width: 50%;
 }
 .enviarFormulari input {
-  color: black;
+  color: #212223;
+  margin: 10px auto;
+  background-color: #bfbfbf;
+  border: none;
+  padding: 1%;
+}
+
+textarea {
+  height: 300px;
+}
+
+.FormText {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
 }
