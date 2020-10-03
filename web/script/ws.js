@@ -10,7 +10,7 @@ app.use(cors());
 
 "SELECT routes.RouteID, routes.ZoneID, routes.DifficultyID ImgName, Likes, ZoneName, difficulty_translations.DifficultyName, DifficultyDescription, InitialDate, FinalDate 
 FROM 
-    (((routes INNER JOIN difficulties 
+    (((routes INNER JOIN difficulties
         ON routes.DifficultyID = difficulties.DifficultyID) 
     INNER JOIN zones 
         ON routes.ZoneID = zones.ZoneID) 
