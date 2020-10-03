@@ -98,7 +98,7 @@ $(function () {
   $("#infoTarifes").css("max-height", $("#menu").css("height"));
   */
 
-  //////TARIFES BBDD //////////
+  //////////////////TARIFES BBDD //////////////
   $.get("http://localhost:3000/prices?TranslationID=1", function (data, status) {
     var i = 0;
     for (i = 0; i < data.length; i++){
