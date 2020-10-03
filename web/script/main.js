@@ -97,4 +97,17 @@ $(function () {
   $("#infoMerch").css("max-height", $("#menu").css("height"));
   $("#infoTarifes").css("max-height", $("#menu").css("height"));
   */
+
+  //////TARIFES BBDD //////////
+  $.get("http://localhost:3000/prices?TranslationID=1", function (data, status) {
+    var i = 0;
+    for (i = 0; i < data.length; i++){
+        $("#tarifesNormals").append(
+                "<div id='preus" + [i] + "'>" +
+                "<h3>" + data[i].PriceName+ "</h3>" +
+                "<p>"+data[i].Price+"<p>"+
+                "<p>" + data[i].PriceDescription + "<p>" + "</div>"
+        ); 
+    };              
+});
 });

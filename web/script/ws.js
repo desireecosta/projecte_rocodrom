@@ -124,7 +124,7 @@ app.get("/activities", (req,res) => {
     })
     con.connect(function(err){
         if (err) throw err;
-        con.query("SELECT activities.ActivityID, activity_translations.ActivityTime, ActivityDuration, ActivityPrice, ActivityDescription, CategoryName FROM ((activities INNER JOIN activity_categories ON activities.CategoryID = activity_categories.CategoryID) INNER JOIN activity_translations ON activities.ActivityID = activity_translations.ActivityID) WHERE TranslationID ='"+req.query.TranslationID+"'", function(err,result,fields){
+        con.query("SELECT activities.ActivityID, activity_translations.ActivityTime, ActivityDuration, ActivityPrice, ActivityDescription, CategoryName, activities.CategoryID FROM ((activities INNER JOIN activity_categories ON activities.CategoryID = activity_categories.CategoryID) INNER JOIN activity_translations ON activities.ActivityID = activity_translations.ActivityID) WHERE TranslationID ='"+req.query.TranslationID+"'", function(err,result,fields){
             if (err) throw err;
             res.header("Content-Type", "application/json")
             res.json(result);
