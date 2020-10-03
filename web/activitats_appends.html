@@ -17,17 +17,30 @@
             $("#boto").click(function () {
                 $.get("http://localhost:3000/activities?TranslationID=1", function (data, status) {
                     var i = 0;
+                    var num_cat=""
+                    var cont="";
                     for (i = 0; i < data.length; i++){
-                        var cont= "<div id='activitat" + [i] + "'><h2>" + data[i].CategoryName +"</h2>"+"<p>"+data[i].ActivityTime +"<p>"+"<h3>" + data[i].ActivityDuration + "</h3>";
-                        if(data[i].ActivityDescription){
-                            cont = cont + "<p>" + data[i].ActivityPrice + "<p>";
-                        }
-                        if(data[i].ActivityPrice){
-                            cont= cont + "<h3>"+ data[i].ActivityDescription +"<h3>";
-                        }
-                        cont = cont + "</div>";
-                        $("#capa").append(cont);
+                        if (data[i].CategoryID!=num_cat){
 
+                            cont="";
+                             cont = cont+  "<div id='activitat" + [i] + "'><h2>" + data[i].CategoryName +"</h2>"+"<p>"+ data[i].ActivityDuration + "</h3>";
+                        
+                            if(data[i].ActivityDescription){
+                                cont = cont + "<p>" + data[i].ActivityPrice + "<p>";
+                            }
+                        }
+
+                        cont = cont + data[i].ActivityTime +"<p>"+"<h3>"
+
+                        if (data[i].CategoryID!=num_cat){
+                        
+                            if(data[i].ActivityPrice){
+                                cont= cont + "<h3>"+ data[i].ActivityDescription +"<h3>";
+                            }
+                            cont = cont + "</div>";
+                            $("#capa").append(cont);
+                        }
+                        num_cat=data[i].CategoryID
 
 
                         /*if (typeof (data[i].ActivityDescription) == "undefined" && typeof (data[i].ActivityPrice) == "undefined") {

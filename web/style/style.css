@@ -57,7 +57,7 @@
   --midaBordes: 30px;
 }
 
-* {
+*{
   font-family: "Mazzard M Thin";
   letter-spacing: 0.5px;
   color: white;
@@ -65,7 +65,7 @@
 *::-webkit-scrollbar{
   display: none;
 }
-#galeriaContainer::-webkit-scrollbar{
+#galeriaContainer::-webkit-scrollbar, #viesImatges::-webkit-scrollbar, #merchContainer::-webkit-scrollbar{
   display: initial;
 }
 
@@ -131,6 +131,12 @@ h2 {
   letter-spacing: 1.8px;
   font-size: 30pt;
   margin: 20px 0;
+}
+
+h3{
+  font-family: "Mazzard H Regular";
+  font-size: 30pt;
+  margin: 0px;
 }
 
 p {
@@ -346,6 +352,7 @@ Idiomes menu
 }
 
 #activitats, #infoContacte, #infoBombo, #infoCova, #infoPlaca, #infoDesplom, #mainEquipacio, #infoGaleria, #infoMerch, #infoTarifes {
+  width:100%;
   max-height: 1000px;
   max-width: calc(100% - 360px);
   padding: 60px 0 60px 60px;
@@ -412,49 +419,46 @@ Idiomes menu
   max-width: 200px;
 }*/
 
-#infoTarifes {
-  color: white;
-  margin: auto;
-  margin-top: 5%;
-}
-
-#horaris {
-  border: 5px solid #bfbfbf;
-  height: 150px;
-  width: 600px;
-  color: white;
-  text-align: center;
-}
-
-#tarifes {
-  height: 200px;
-  color: white;
-  display: flex;
+#tarifesNormals, #tarifesMesos{
+  display:flex;
   flex-wrap: wrap;
 }
-#tarifes div div {
-  padding: 10%;
-}
-
-#tarifesNormals,
-#tarifesMesos {
-  text-align: center;
-}
-
-#tarifesNormals div,
-#tarifesMesos div {
-  border: 5px solid #bfbfbf;
-}
-
-#teles,
-#trapezzi,
-#escalada,
-#escaladaGrups {
-  border: 5px solid #bfbfbf;
+#tarifesNormals div, #tarifesMesos div{
   width: 250px;
-  height: 250px;
-  margin: auto;
-  padding: 1%;
+  height:250px;
+  border: 5px solid var(--grisclar);
+  padding: 20px;
+  margin: 30px 30px 0 0;
+}
+
+
+
+
+#activitats h1{
+  margin-bottom: 50px;;
+}
+
+.activitats {
+  border: 5px solid #bfbfbf;
+  width: 400px;
+  height: 400px;
+  margin: 0 auto 40px 0;
+  padding: 50px;
+}
+.activitats h2{
+  margin-top:0;
+}
+.activitats h3{
+  font-size: 18pt;
+  font-family: "Futura Bold",sans-serif;
+}
+.imatgesActivitats{
+  display: flex;
+  margin-top: 30px;
+}
+.imatgesActivitats img{
+  height:100px;
+  width:100px;
 }
 
 #activitats h1 {
@@ -470,37 +474,20 @@ Idiomes menu
 #infoEquipacio {
   justify-content: space-between;
 }
-
-
-
-.imatgeTeles,
-.imatgeTrapezzi,
-.imatgeEscalada,
-.imatgeEscaladaGrups {
-  border: 2px solid #bfbfbf;
-  width: 20px;
-  height: 20px;
-}
-
-#infoMerch {
-  width: 70%;
-  margin: auto;
-  display: flex;
-  flex-wrap: wrap;
-}
-#infoGaleria {
-  width: 70%;
-  margin: auto;
-}
-
-#galeriaContainer,
-#merchContainer {
+#galeriaContainer{
   margin: 50px auto;
   display: flex;
   flex-wrap: wrap;
   overflow-y: scroll;
   height: 70%;
   max-height: 700px;
+}
+#merchContainer {
+  margin: 50px auto;
+  display: flex;
+  flex-wrap: wrap;
+  overflow-y: scroll;
+  max-height: 775px;
 }
 
 #infoGaleria h1, #infoGaleria h2{
@@ -529,17 +516,24 @@ Idiomes menu
 
 .galeriaImatge,
 .merchContent {
-  text-align: center;
-  width: 30%;
+  width: 26%;
   margin: auto;
   margin-top: 5%;
 }
-.galeriaImatge img,
+
 .merchContent img {
+  width:100%;
+  text-align: center;
+  box-shadow: #ffffff;
+  margin-bottom:20px;
+}
+.galeriaImatge img {
+  text-align: center;
   margin: auto;
   width: 50%;
   box-shadow: #ffffff;
 }
+
 .galeriaImatge img:hover,
 .merchContent img:hover {
   -webkit-box-shadow: 0 10px 10px -6px white;
@@ -577,8 +571,7 @@ Idiomes menu
 .galeriaImatge img {
   margin: auto;
   display: block;
-  width: 80%;
-  max-width: 700px;
+  width: 100%;
 }
 
 #imgModalGaleria,
@@ -633,10 +626,11 @@ Idiomes menu
 .closeMerch,
 .closeBombo,
 .closeDesplom,
-.closePlaca {
+.closePlaca, 
+.closeCova{
   position: absolute;
-  top: 15px;
-  right: 35px;
+  top: 50px;
+  right: 50px;
   color: #f1f1f1;
   font-size: 40px;
   font-weight: bold;
@@ -648,7 +642,7 @@ Idiomes menu
 .closeMerch:hover,
 .closeMerch:focus,
 .closeBombo:hover,
-.clsoeBombo:focus,
+.closeBombo:focus,
 .closeCova:hover,
 .closeCova:focus,
 .closeDesplom:hover,
@@ -691,16 +685,16 @@ Idiomes menu
   margin-bottom: 70px;
 }
 
-.zona {
+.zona{
   width: 300px;
   margin: 0 auto 40px 0;
 }
-.zona img {
+.zona img{
   width: 250px;
   border: 5px solid #bfbfbf;
   float: left;
 }
-.zona p {
+.zona p{
   writing-mode: vertical-rl;
   text-orientation: mixed;
   color: white;
@@ -722,7 +716,9 @@ Idiomes menu
 .vies img {
   border: 5px solid #bfbfbf;
   width: 300px;
+  height: 500px;
   margin: auto;
+  object-fit: cover;
 }
 
 #viesImatges{
@@ -760,11 +756,6 @@ Idiomes menu
   color: var(--vermell);
 }
 
-
-#viesImatges::-webkit-scrollbar{
-  display: initial;
-}
-
 #separacio{
   width:10px;
   background-color:white;
@@ -795,9 +786,12 @@ Idiomes menu
   margin: 0px;
 }
 
-#equipacioLabelTop h3{
+#equipacioLabelTop{
   display:none;
-  margin-bottom: 30px;;
+}
+
+#desplegablePetitTop{
+  margin-bottom: 30px;
 }
 
 #containerVies{
@@ -826,40 +820,195 @@ Idiomes menu
   display: none;
 }
 
-#contactes {
+.viaBombo, .viaPlaca, .viaDesplom, .viaCova{
+  display:flex;
+  padding:50px 130px;
+}
+
+.imatgeVia{
+  margin-right:50px;
+}
+
+.dificultat{
   display: flex;
-  flex-wrap: wrap;
-  margin: auto;
+  margin-bottom: 20px;
 }
 
-.atencioPublic,
-.correu,
-.facebook,
-.telefon {
-  border: 5px solid #bfbfbf;
-  padding: 1%;
-  text-align: center;
-}
-.atencioPublic a,
-.correu a,
-.facebook a,
-.telefon a {
-  text-decoration: none;
-  color: white;
+#dificultatVia h2{
+  font-family: "Futura Bold", sans-serif;
+  font-size: 100pt;
+  margin: 0 0 30px;
+  line-height: 0.8;
 }
 
+.quadresDificultat{
+  width:40px;
+  height:40px;
+  border: 1px solid var(--grisclar);
+  margin-right: 20px;
+}
+
+.dificultatText{
+  font-size: 20pt;
+  font-family: "Futura Bold",sans-serif;
+}
+
+.comentaris{
+  margin:80px 0;
+}
+.comentaris h3{
+  margin-bottom: 20px;
+}
+.comentaris label{
+  font-size: 16pt;
+  font-family:"Mazzard M Light";
+  margin-right: 20px;;
+}
+#nouComentariBombo, #nouComentariCova, #nouComentariDesplom, #nouComentariPlaca{
+  width:500px;
+  height:40px;
+  background-color: rgba(0,0,0,0);
+  border:none;
+  outline:none;
+  border-bottom: 2px solid var(--grisclar);
+  margin-right:30px;
+}
+
+#botoEnviarComentari{
+  padding:10px;
+  border: 4px solid var(--grisclar);
+  background-color: rgba(0,0,0,0);
+  margin-top:20px;
+}
+
+.comentarisUsuaris{
+  margin-top: 40px;;
+}
 .comentariUsuari {
-  border: 5px solid #bfbfbf;
-  padding: 1%;
-  margin: auto;
-  width: 70%;
+  border: 3px solid #bfbfbf;
+  padding: 20px;
+  width: 80%;
+  margin-bottom: 30px;
 }
-
 .usuari {
   text-transform: uppercase;
+  font-family: "Futura Bold", sans-serif;
+}
+.dataComentari{
+  margin-left: 7px;
+  font-size: 14pt;
+}
+.usuari, .dataComentari{
+  display: inline-block;
 }
 .comentari {
-  font-style: italic;
+  font-family: "Mazzard M ExtraLight Italic";
+}
+
+#containerInfoContacte{
+  overflow:hidden;
+}
+.mapouter{
+  width:600px;
+  position: relative;
+  float: left;
+}
+#formulariContacte{
+  width:90%;
+}
+
+#infoContacte h1{
+  margin-bottom: 70px;
+}
+
+#contactes{
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  width:calc(100% - 630px);
+  float: left;
+  margin-right: 30px;;
+}
+#contactes div{
+  width:250px;
+  min-height:250px;
+  margin:0 30px 30px 0;
+  padding:30px;
+  border: 5px solid var(--grisclar);
+}
+#contactes a{  
+  text-decoration: none;
+}
+
+.gmap_canvas, .gmap_canvas iframe{
+  overflow: hidden;
+  background: none !important;
+  height: 500px;
+  width: 500px;
+}
+
+#formulariContacte {
+  margin:30px auto 0 0;
+  display: flex;
+  flex-direction: column;
+  align-content: space-around;
+}
+#form{
+  margin-top: 30px;
+  display:flex;
+  flex-wrap: wrap;
+}
+#form div{
+  border: 5px solid var(--grisclar);
+  padding: 20px;
+  margin: 0 30px 30px 0;
+}
+.formText label, .formText textarea{
+  display:block;
+}
+.formText textarea{
+  font-size: 20px;
+  background-color: rgba(0,0,0,0);
+  outline: none;
+  border:none;
+  border-bottom: 2px solid var(--grisclar);
+  border-right: 2px solid var(--grisclar);
+  width: 100%;
+
+}
+.formText label{
+  margin-bottom:30px;
+}
+.formText{
+  width:100%;
+}
+#form div label{
+  font-family: "Futura Bold";
+  font-size: 20px;
+
+}
+#form div input{
+  font-size: 20px;
+  min-width: 150px;
+  background-color: rgba(0,0,0,0);
+  outline: none;
+  height: 35px;
+  border:none;
+  border-bottom: 2px solid var(--grisclar);
+  margin-left: 15px;
+
+}
+#form .Email input{
+  min-width: 350px;
+}
+
+
+.enviarFormulari input {
+  font-family: "Mazzard H Regular";
+  color: #212223;
+  background-color: #bfbfbf;
+  border: none;
+  padding: 20px;;
 }
 
 @media only screen and (max-width: 1715px) {
@@ -993,27 +1142,63 @@ Idiomes menu
   #merchContainer {
     height: auto;
     max-height: none;
-    margin: 50px auto;
+    margin: 50px auto 0;
     display: flex;
     flex-wrap: wrap;
     overflow: auto;
   }
+
+
   #infoGaleria,
   #infoMerch {
     width: 100%;
   }
-  #equipacioLabelTop h3{
+  #equipacioLabelTop{
     display:block;
   }
   #equipacioLabelEsquerra{
     display:none;
+  }
+  .viaBombo, .viaPlaca, .viaDesplom, .viaCova{
+    padding:50px 30px;
+  }
+  #dificultatVia h2{
+    font-size: 70pt;
+  }
+  .activitats {
+    border: 5px solid #bfbfbf;
+    width: 400px;
+    height: 400px;
+    margin: 0 auto 40px;
+  }
+  .mapouter{
+    width:100%;
+    float: none;
+  }
+  #contactes{
+    width:100%;
+    float: none;
+    margin-right:0;
+  }
+  .gmap_canvas,
+  .gmap_canvas iframe{
+    overflow: hidden;
+    background: none !important;
+    width: 100%;
+  }
+  #formulariContacte{
+    width:100%;
+    margin: 30px 0 0 0;
+  }
+  #form .FormText{
+    margin-right: 0;
   }
 }
 
 @media only screen and (max-width: 900px) {
 
   h1{
-    font-size:90px;
+    font-size:80px;
   }
   #menu{
     height:auto;
@@ -1073,6 +1258,20 @@ Idiomes menu
   #hamburguesa i {
     font-size: 35pt;
   }
+
+  #activitats,
+  #infoContacte,
+  #infoBombo,
+  #infoCova,
+  #infoPlaca,
+  #infoDesplom,
+  #mainEquipacio,
+  #infoGaleria,
+  #infoMerch,
+  #infoTarifes {
+    padding: 20px;
+  }
+
   #quiSomAll {
     height: auto;
   }
@@ -1103,7 +1302,7 @@ Idiomes menu
 
   .galeriaImatge,
   .merchContent {
-    width: 50%;
+    width: 47%;
   }
   .galeriaImatge img,
   .merchContent img {
@@ -1112,7 +1311,7 @@ Idiomes menu
   #infoGaleria h1, #infoMerch h1{
     margin: 0;
   }
-  .zona {
+  .zona, .activitats {
     width: 100%;
     margin: 0;
     margin-bottom: 40px;
@@ -1127,6 +1326,25 @@ Idiomes menu
     color: white;
     font-size:30pt;
   }
+
+  .datesConfiguracions{
+    font-size: 14pt;
+  }
+
+  .viaCova, .viaPlaca, .viaDesplom, .viaBombo{
+    display:block;
+  }
+  .imatgeVia, .infoVia{
+    width:100%;
+    margin:0 auto 60px;;
+    width:fit-content;
+  }
+  #contactes div{
+    width:100%;
+    margin:0 0 40px;
+    padding:30px;
+    border: 5px solid var(--grisclar);
+  }
 }
 
 /* 100% Image Width on Smaller Screens */
@@ -1134,44 +1352,20 @@ Idiomes menu
   .galeriaImatge img {
     width: 100%;
   }
-  .galeriaImatge,
-  .merchContent {
+  .galeriaImatge{
     width: 100%;
   }
-  .galeriaImatge img,
-  .merchContent img {
+  .merchContent{
+    width:90%;
+    margin:0 auto;
+  }
+  .galeriaImatge img{
     width: 80%;
   }
-}
-#formulariContacte {
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-  align-content: space-around;
-  width: 70%;
-}
-#form div {
-  margin: 1% auto;
-}
-#form div label {
-  display: inline-block;
-  font-weight: bold;
-  width: 20%;
-}
-#form div input,
-#form div textarea {
-  font-weight: lighter;
-  color: #212223;
-  width: 50%;
-}
-.enviarFormulari input {
-  color: #212223;
-  margin: 10px auto;
-  background-color: #bfbfbf;
-  border: none;
-  padding: 1%;
-}
-
-textarea {
-  height: 300px;
+  .merchContent img{
+    width:100%;
+  }
+  .merchContent p{
+    margin-bottom:70px;
+  }
 }
