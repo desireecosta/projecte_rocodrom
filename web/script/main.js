@@ -108,6 +108,8 @@ $(function () {
                 "<p>"+data[i].Price+"<p>"+
                 "<p>" + data[i].PriceDescription + "<p>" + "</div>"
         ); 
+        
+
     };              
 });
 });
