@@ -57,15 +57,17 @@
   --midaBordes: 30px;
 }
 
-*{
+* {
   font-family: "Mazzard M Thin";
   letter-spacing: 0.5px;
   color: white;
 }
-*::-webkit-scrollbar{
+*::-webkit-scrollbar {
   display: none;
 }
-#galeriaContainer::-webkit-scrollbar, #viesImatges::-webkit-scrollbar, #merchContainer::-webkit-scrollbar{
+#galeriaContainer::-webkit-scrollbar,
+#viesImatges::-webkit-scrollbar,
+#merchContainer::-webkit-scrollbar {
   display: initial;
 }
 
@@ -133,7 +135,7 @@ h2 {
   margin: 20px 0;
 }
 
-h3{
+h3 {
   font-family: "Mazzard H Regular";
   font-size: 30pt;
   margin: 0px;
@@ -351,8 +353,17 @@ Idiomes menu
   height: 100%;
 }
 
-#activitats, #infoContacte, #infoBombo, #infoCova, #infoPlaca, #infoDesplom, #mainEquipacio, #infoGaleria, #infoMerch, #infoTarifes {
-  width:100%;
+#activitats,
+#infoContacte,
+#infoBombo,
+#infoCova,
+#infoPlaca,
+#infoDesplom,
+#mainEquipacio,
+#infoGaleria,
+#infoMerch,
+#infoTarifes {
+  width: 100%;
   max-height: 1000px;
   max-width: calc(100% - 360px);
   padding: 60px 0 60px 60px;
@@ -419,23 +430,22 @@ Idiomes menu
   max-width: 200px;
 }*/
 
-#tarifesNormals, #tarifesMesos{
-  display:flex;
+#tarifesNormals,
+#tarifesMesos {
+  display: flex;
   flex-wrap: wrap;
 }
-#tarifesNormals div, #tarifesMesos div{
+#tarifesNormals div,
+#tarifesMesos div {
   width: 250px;
-  height:250px;
+  height: 250px;
   border: 5px solid var(--grisclar);
   padding: 20px;
   margin: 30px 30px 0 0;
 }
 
-
-
-
-#activitats h1{
-  margin-bottom: 50px;;
+#activitats h1 {
+  margin-bottom: 50px;
 }
 
 .activitats {
@@ -445,20 +455,20 @@ Idiomes menu
   margin: 0 auto 40px 0;
   padding: 50px;
 }
-.activitats h2{
-  margin-top:0;
+.activitats h2 {
+  margin-top: 0;
 }
-.activitats h3{
+.activitats h3 {
   font-size: 18pt;
-  font-family: "Futura Bold",sans-serif;
+  font-family: "Futura Bold", sans-serif;
 }
-.imatgesActivitats{
+.imatgesActivitats {
   display: flex;
   margin-top: 30px;
 }
-.imatgesActivitats img{
-  height:100px;
-  width:100px;
+.imatgesActivitats img {
+  height: 100px;
+  width: 100px;
 }
 
 #activitats h1 {
@@ -474,7 +484,7 @@ Idiomes menu
 #infoEquipacio {
   justify-content: space-between;
 }
-#galeriaContainer{
+#galeriaContainer {
   margin: 50px auto;
   display: flex;
   flex-wrap: wrap;
@@ -490,7 +500,8 @@ Idiomes menu
   max-height: 775px;
 }
 
-#infoGaleria h1, #infoGaleria h2{
+#infoGaleria h1,
+#infoGaleria h2 {
   display: block;
 }
 
@@ -522,10 +533,10 @@ Idiomes menu
 }
 
 .merchContent img {
-  width:100%;
+  width: 100%;
   text-align: center;
   box-shadow: #ffffff;
-  margin-bottom:20px;
+  margin-bottom: 20px;
 }
 .galeriaImatge img {
   text-align: center;
@@ -626,8 +637,8 @@ Idiomes menu
 .closeMerch,
 .closeBombo,
 .closeDesplom,
-.closePlaca, 
-.closeCova{
+.closePlaca,
+.closeCova {
   position: absolute;
   top: 50px;
   right: 50px;
@@ -677,24 +688,24 @@ Idiomes menu
   width: 700px;
 }
 
-#zones p{
+#zones p {
   font-family: "Mazzard M ExtraLight Italic";
 }
 
-#mainEquipacio h1{
+#mainEquipacio h1 {
   margin-bottom: 70px;
 }
 
-.zona{
+.zona {
   width: 300px;
   margin: 0 auto 40px 0;
 }
-.zona img{
+.zona img {
   width: 250px;
   border: 5px solid #bfbfbf;
   float: left;
 }
-.zona p{
+.zona p {
   writing-mode: vertical-rl;
   text-orientation: mixed;
   color: white;
@@ -721,81 +732,79 @@ Idiomes menu
   object-fit: cover;
 }
 
-#viesImatges{
-  width:auto;
+#viesImatges {
+  width: auto;
   overflow-y: scroll;
-  display:flex;
+  display: flex;
   flex-wrap: wrap;
-  height:573px;
+  height: 573px;
   justify-content: flex-start;
-
 }
-.datesConfiguracions{
+.datesConfiguracions {
   font-family: "Mazzard H Regular";
   font-size: 16pt;
   background-color: var(--grisclar);
   padding: 0 30px;
-  width:100%;
-  height:80px;
-  color:black;
+  width: 100%;
+  height: 80px;
+  color: black;
 }
-#viesInfo p{
+#viesInfo p {
   margin: 30px 0;
 }
 
-#grogues{
+#grogues {
   color: var(--groc);
 }
-#blaves{
+#blaves {
   color: var(--blau);
 }
-#taronges{
+#taronges {
   color: var(--taronja);
 }
-#vermelles{
+#vermelles {
   color: var(--vermell);
 }
 
-#separacio{
-  width:10px;
-  background-color:white;
+#separacio {
+  width: 10px;
+  background-color: white;
   margin: 0 10%;
 }
 
-
-#tornar p{
+#tornar p {
   font-family: "Mazzard M Light";
   font-size: 10pt;
   display: inline-block;
   margin-left: 10px;
   margin-top: -5px;
-
 }
 
-#equipacioLabelEsquerra{
-  display:flex;
-  flex-wrap:wrap;
-  margin-right:20px;
-  width:100%;
-  max-width:270px;
+#equipacioLabelEsquerra {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: 20px;
+  width: 100%;
+  max-width: 270px;
 }
 
-#equipacioLabelEsquerra h3, #equipacioLabelTop h3{
+#equipacioLabelEsquerra h3,
+#equipacioLabelTop h3 {
   font-family: "Mazzard H Regular";
   font-size: 30pt;
   margin: 0px;
 }
 
-#equipacioLabelTop{
-  display:none;
+#equipacioLabelTop {
+  display: none;
 }
 
-#desplegablePetitTop{
+#desplegablePetitTop {
   margin-bottom: 30px;
 }
 
-#containerVies{
-  display:flex;
+#containerVies {
+  display: flex;
 }
 
 #infoBombo a,
@@ -816,73 +825,79 @@ Idiomes menu
 .via {
   border: 5px solid #bfbfbf;
 }
-#via{
+#via {
   display: none;
 }
 
-.viaBombo, .viaPlaca, .viaDesplom, .viaCova{
-  display:flex;
-  padding:50px 130px;
+.viaBombo,
+.viaPlaca,
+.viaDesplom,
+.viaCova {
+  display: flex;
+  padding: 50px 130px;
 }
 
-.imatgeVia{
-  margin-right:50px;
+.imatgeVia {
+  margin-right: 50px;
 }
 
-.dificultat{
+.dificultat {
   display: flex;
   margin-bottom: 20px;
 }
 
-#dificultatVia h2{
+#dificultatVia h2 {
   font-family: "Futura Bold", sans-serif;
   font-size: 100pt;
   margin: 0 0 30px;
   line-height: 0.8;
 }
 
-.quadresDificultat{
-  width:40px;
-  height:40px;
+.quadresDificultat {
+  width: 40px;
+  height: 40px;
   border: 1px solid var(--grisclar);
   margin-right: 20px;
 }
 
-.dificultatText{
+.dificultatText {
   font-size: 20pt;
-  font-family: "Futura Bold",sans-serif;
+  font-family: "Futura Bold", sans-serif;
 }
 
-.comentaris{
-  margin:80px 0;
+.comentaris {
+  margin: 80px 0;
 }
-.comentaris h3{
+.comentaris h3 {
   margin-bottom: 20px;
 }
-.comentaris label{
+.comentaris label {
   font-size: 16pt;
-  font-family:"Mazzard M Light";
-  margin-right: 20px;;
+  font-family: "Mazzard M Light";
+  margin-right: 20px;
 }
-#nouComentariBombo, #nouComentariCova, #nouComentariDesplom, #nouComentariPlaca{
-  width:500px;
-  height:40px;
-  background-color: rgba(0,0,0,0);
-  border:none;
-  outline:none;
+#nouComentariBombo,
+#nouComentariCova,
+#nouComentariDesplom,
+#nouComentariPlaca {
+  width: 500px;
+  height: 40px;
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  outline: none;
   border-bottom: 2px solid var(--grisclar);
-  margin-right:30px;
+  margin-right: 30px;
 }
 
-#botoEnviarComentari{
-  padding:10px;
+#botoEnviarComentari {
+  padding: 10px;
   border: 4px solid var(--grisclar);
-  background-color: rgba(0,0,0,0);
-  margin-top:20px;
+  background-color: rgba(0, 0, 0, 0);
+  margin-top: 20px;
 }
 
-.comentarisUsuaris{
-  margin-top: 40px;;
+.comentarisUsuaris {
+  margin-top: 40px;
 }
 .comentariUsuari {
   border: 3px solid #bfbfbf;
@@ -894,53 +909,55 @@ Idiomes menu
   text-transform: uppercase;
   font-family: "Futura Bold", sans-serif;
 }
-.dataComentari{
+.dataComentari {
   margin-left: 7px;
   font-size: 14pt;
 }
-.usuari, .dataComentari{
+.usuari,
+.dataComentari {
   display: inline-block;
 }
 .comentari {
   font-family: "Mazzard M ExtraLight Italic";
 }
 
-#containerInfoContacte{
-  overflow:hidden;
+#containerInfoContacte {
+  overflow: hidden;
 }
-.mapouter{
-  width:600px;
+.mapouter {
+  width: 600px;
   position: relative;
   float: left;
 }
-#formulariContacte{
-  width:90%;
+#formulariContacte {
+  width: 90%;
 }
 
-#infoContacte h1{
+#infoContacte h1 {
   margin-bottom: 70px;
 }
 
-#contactes{
+#contactes {
   position: relative;
   display: flex;
   flex-wrap: wrap;
-  width:calc(100% - 630px);
+  width: calc(100% - 630px);
   float: left;
-  margin-right: 30px;;
+  margin-right: 30px;
 }
-#contactes div{
-  width:250px;
-  min-height:250px;
-  margin:0 30px 30px 0;
-  padding:30px;
+#contactes div {
+  width: 250px;
+  min-height: 250px;
+  margin: 0 30px 30px 0;
+  padding: 30px;
   border: 5px solid var(--grisclar);
 }
-#contactes a{  
+#contactes a {
   text-decoration: none;
 }
 
-.gmap_canvas, .gmap_canvas iframe{
+.gmap_canvas,
+.gmap_canvas iframe {
   overflow: hidden;
   background: none !important;
   height: 500px;
@@ -948,67 +965,64 @@ Idiomes menu
 }
 
 #formulariContacte {
-  margin:30px auto 0 0;
+  margin: 30px auto 0 0;
   display: flex;
   flex-direction: column;
   align-content: space-around;
 }
-#form{
+#form {
   margin-top: 30px;
-  display:flex;
+  display: flex;
   flex-wrap: wrap;
 }
-#form div{
+#form div {
   border: 5px solid var(--grisclar);
   padding: 20px;
   margin: 0 30px 30px 0;
 }
-.formText label, .formText textarea{
-  display:block;
+.formText label,
+.formText textarea {
+  display: block;
 }
-.formText textarea{
+.formText textarea {
   font-size: 20px;
-  background-color: rgba(0,0,0,0);
+  background-color: rgba(0, 0, 0, 0);
   outline: none;
-  border:none;
+  border: none;
   border-bottom: 2px solid var(--grisclar);
   border-right: 2px solid var(--grisclar);
   width: 100%;
-
 }
-.formText label{
-  margin-bottom:30px;
+.formText label {
+  margin-bottom: 30px;
 }
-.formText{
-  width:100%;
+.formText {
+  width: 100%;
 }
-#form div label{
+#form div label {
   font-family: "Futura Bold";
   font-size: 20px;
-
 }
-#form div input{
+#form div input {
   font-size: 20px;
   min-width: 150px;
-  background-color: rgba(0,0,0,0);
+  background-color: rgba(0, 0, 0, 0);
   outline: none;
   height: 35px;
-  border:none;
+  border: none;
   border-bottom: 2px solid var(--grisclar);
   margin-left: 15px;
-
 }
-#form .Email input{
+#form .Email input {
   min-width: 350px;
 }
-
 
 .enviarFormulari input {
   font-family: "Mazzard H Regular";
   color: #212223;
   background-color: #bfbfbf;
   border: none;
-  padding: 20px;;
+  padding: 20px;
 }
 
 @media only screen and (max-width: 1715px) {
@@ -1064,7 +1078,7 @@ Idiomes menu
   #xxss .fa-instagram {
     margin-right: 45px;
   }
-  .logo{
+  .logo {
     height: 680px;
     width: 400px;
     overflow: scroll;
@@ -1148,21 +1162,23 @@ Idiomes menu
     overflow: auto;
   }
 
-
   #infoGaleria,
   #infoMerch {
     width: 100%;
   }
-  #equipacioLabelTop{
-    display:block;
+  #equipacioLabelTop {
+    display: block;
   }
-  #equipacioLabelEsquerra{
-    display:none;
+  #equipacioLabelEsquerra {
+    display: none;
   }
-  .viaBombo, .viaPlaca, .viaDesplom, .viaCova{
-    padding:50px 30px;
+  .viaBombo,
+  .viaPlaca,
+  .viaDesplom,
+  .viaCova {
+    padding: 50px 30px;
   }
-  #dificultatVia h2{
+  #dificultatVia h2 {
     font-size: 70pt;
   }
   .activitats {
@@ -1171,37 +1187,36 @@ Idiomes menu
     height: 400px;
     margin: 0 auto 40px;
   }
-  .mapouter{
-    width:100%;
+  .mapouter {
+    width: 100%;
     float: none;
   }
-  #contactes{
-    width:100%;
+  #contactes {
+    width: 100%;
     float: none;
-    margin-right:0;
+    margin-right: 0;
   }
   .gmap_canvas,
-  .gmap_canvas iframe{
+  .gmap_canvas iframe {
     overflow: hidden;
     background: none !important;
     width: 100%;
   }
-  #formulariContacte{
-    width:100%;
+  #formulariContacte {
+    width: 100%;
     margin: 30px 0 0 0;
   }
-  #form .FormText{
+  #form .FormText {
     margin-right: 0;
   }
 }
 
 @media only screen and (max-width: 900px) {
-
-  h1{
-    font-size:80px;
+  h1 {
+    font-size: 80px;
   }
-  #menu{
-    height:auto;
+  #menu {
+    height: auto;
   }
   .logo {
     margin: 0;
@@ -1308,10 +1323,12 @@ Idiomes menu
   .merchContent img {
     width: 80%;
   }
-  #infoGaleria h1, #infoMerch h1{
+  #infoGaleria h1,
+  #infoMerch h1 {
     margin: 0;
   }
-  .zona, .activitats {
+  .zona,
+  .activitats {
     width: 100%;
     margin: 0;
     margin-bottom: 40px;
@@ -1324,25 +1341,29 @@ Idiomes menu
     writing-mode: vertical-rl;
     text-orientation: mixed;
     color: white;
-    font-size:30pt;
+    font-size: 30pt;
   }
 
-  .datesConfiguracions{
+  .datesConfiguracions {
     font-size: 14pt;
   }
 
-  .viaCova, .viaPlaca, .viaDesplom, .viaBombo{
-    display:block;
+  .viaCova,
+  .viaPlaca,
+  .viaDesplom,
+  .viaBombo {
+    display: block;
   }
-  .imatgeVia, .infoVia{
-    width:100%;
-    margin:0 auto 60px;;
-    width:fit-content;
+  .imatgeVia,
+  .infoVia {
+    width: 100%;
+    margin: 0 auto 60px;
+    width: fit-content;
   }
-  #contactes div{
-    width:100%;
-    margin:0 0 40px;
-    padding:30px;
+  #contactes div {
+    width: 100%;
+    margin: 0 0 40px;
+    padding: 30px;
     border: 5px solid var(--grisclar);
   }
 }
@@ -1352,20 +1373,39 @@ Idiomes menu
   .galeriaImatge img {
     width: 100%;
   }
-  .galeriaImatge{
+  .galeriaImatge {
     width: 100%;
   }
-  .merchContent{
-    width:90%;
-    margin:0 auto;
+  .merchContent {
+    width: 90%;
+    margin: 0 auto;
   }
-  .galeriaImatge img{
+  .galeriaImatge img {
     width: 80%;
   }
-  .merchContent img{
-    width:100%;
+  .merchContent img {
+    width: 100%;
   }
-  .merchContent p{
-    margin-bottom:70px;
+  .merchContent p {
+    margin-bottom: 70px;
   }
+}
+
+.dif1 {
+  background-color: white;
+}
+.dif2 {
+  background-color: yellow;
+}
+.dif3 {
+  background-color: cyan;
+}
+.dif4 {
+  background-color: orange;
+}
+.dif5 {
+  background-color: red;
+}
+.dif6 {
+  background-color: black;
 }
