@@ -45,9 +45,96 @@ $(".closeMerch").click(function () {
   modalMerch.style.display = "none";
 });
 
-$(function () {
-  ////////////////////  MENU HAMBURGUESA OBRIR I TANCAR  ///////////////////
+/////////////////////////////
 
+//MODAL BOMBO
+
+/////////////////////////////
+
+// Get the modal
+var modalBombo = document.getElementById("myModalBombo");
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var imatgeBombo = document.getElementsByClassName("imatgeBombo");
+var viaBombo = document.getElementsByClassName("viaBombo");
+$(".imatgeBombo").click(function () {
+  modalBombo.style.display = "block";
+});
+// Get the <span> element that closes the modal
+var spanBombo = document.getElementsByClassName("closeBombo")[0];
+
+// When the user clicks on <span> (x), close the modal
+$(".closeBombo").click(function () {
+  modalBombo.style.display = "none";
+});
+
+/////////////////////////////
+
+//MODAL PLACA
+
+/////////////////////////////
+
+// Get the modal
+var modalPlaca = document.getElementById("myModalPlaca");
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var imatgePlaca = document.getElementsByClassName("imatgePlaca");
+var viaPlaca = document.getElementsByClassName("viaPlaca");
+$(".imatgePlaca").click(function () {
+  modalPlaca.style.display = "block";
+});
+// Get the <span> element that closes the modal
+var spanPlaca = document.getElementsByClassName("closePlaca")[0];
+
+// When the user clicks on <span> (x), close the modal
+$(".closePlaca").click(function () {
+  modalPlaca.style.display = "none";
+});
+
+/////////////////////////////
+
+//MODAL COVA
+
+/////////////////////////////
+
+// Get the modal
+var modalCova = document.getElementById("myModalCova");
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var imatgeCova = document.getElementsByClassName("imatgeCova");
+var viaCova = document.getElementsByClassName("viaCova");
+$(".imatgeCova").click(function () {
+  modalCova.style.display = "block";
+});
+// Get the <span> element that closes the modal
+var spanCova = document.getElementsByClassName("closeCova")[0];
+
+// When the user clicks on <span> (x), close the modal
+$(".closeCova").click(function () {
+  modalCova.style.display = "none";
+});
+
+/////////////////////////////
+
+//MODAL DESPLOM
+
+/////////////////////////////
+
+// Get the modal
+var modalDesplom = document.getElementById("myModalDesplom");
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var imatgeDesplom = document.getElementsByClassName("imatgeDesplom");
+var viaDesplom = document.getElementsByClassName("viaDesplom");
+$(".imatgeDesplom").click(function () {
+  modalDesplom.style.display = "block";
+});
+// Get the <span> element that closes the modal
+var spanDesplom = document.getElementsByClassName("closeDesplom")[0];
+
+// When the user clicks on <span> (x), close the modal
+$(".closeDesplom").click(function () {
+  modalDesplom.style.display = "none";
+});
+
+////////////////////  MENU HAMBURGUESA OBRIR I TANCAR  ///////////////////
+$(function () {
   $("#hamburguesa").click(function () {
     $("#menu").css("display", "flex");
     $("#mainQuiSom").hide();
@@ -97,18 +184,63 @@ $(function () {
   $("#infoMerch").css("max-height", $("#menu").css("height"));
   $("#infoTarifes").css("max-height", $("#menu").css("height"));
   */
+});
 
-  //////////////////TARIFES BBDD //////////////
-  $.get("http://localhost:3000/prices?TranslationID=1", function (data, status) {
-    var i = 0;
-    for (i = 0; i < data.length; i++) {
-      $("#tarifesNormals").append(
-        "<div id='preus" + [i] + "'>" +
-        "<h3>" + data[i].PriceName + "</h3>" +
-        "<p>" + data[i].Price + "<p>" +
-        "<p>" + data[i].PriceDescription + "<p>" + "</div>"
-      );
+//////////////////TARIFES BBDD //////////////
+$.get("http://localhost:3000/prices?TranslationID=1", function (data, status) {
+  var i = 0;
+  for (i = 0; i < data.length; i++) {
+    $("#tarifesNormals").append(
+      "<div id='preus" +
+        [i] +
+        "'>" +
+        "<h3>" +
+        data[i].PriceName +
+        "</h3>" +
+        "<p>" +
+        data[i].Price +
+        "<p>" +
+        "<p>" +
+        data[i].PriceDescription +
+        "<p>" +
+        "</div>"
+    );
+  }
+});
+$.get("http://localhost:3000/prices?TranslationID=1", function (data, status) {
+  var sis = data[0];
+  var dotze = data[2];
+  console.log(sis);
+  console.log(dotze);
 
-    };
-  });
+  $("#tarifesMesos").append(
+    "<div id='preus" +
+      sis +
+      "'>" +
+      "<h3>" +
+      sis.PriceName +
+      "</h3>" +
+      "<p>" +
+      sis.Price +
+      "<p>" +
+      "<p>" +
+      sis.PriceDescription +
+      "<p>" +
+      "</div>"
+  );
+  $("#tarifesMesos").append(
+    "<div id='preus" +
+      dotze +
+      "'>" +
+      "<h3>" +
+      dotze.PriceName +
+      "</h3>" +
+      "<p>" +
+      dotze.Price +
+      "<p>" +
+      "<p>" +
+      dotze.PriceDescription +
+      "<p>" +
+      "</div>"
+  );
 });
