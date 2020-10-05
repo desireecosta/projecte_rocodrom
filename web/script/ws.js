@@ -206,21 +206,6 @@ app.get("/merchs", (req,res) => {
 })
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 app.listen(3000, () => {
     console.log("Servidor connectat correctament");
 });

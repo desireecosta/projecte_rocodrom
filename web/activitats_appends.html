@@ -23,19 +23,19 @@
                         if (data[i].CategoryID!=num_cat){
 
                             cont="";
-                             cont = cont+  "<div id='activitat" + [i] + "'><h2>" + data[i].CategoryName +"</h2>"+"<p>"+ data[i].ActivityDuration + "</h3>";
+                             cont = cont+  "<div id='activitat" + [i] + "'><h2>" + data[i].CategoryName +"</h2>"+"<h3>"+ data[i].ActivityDuration +"</h3>";
                         
                             if(data[i].ActivityDescription){
                                 cont = cont + "<p>" + data[i].ActivityPrice + "<p>";
                             }
                         }
 
-                        cont = cont + data[i].ActivityTime +"<p>"+"<h3>"
+                        cont = cont +"<p>"+ data[i].ActivityTime +"<p>";
 
                         if (data[i].CategoryID!=num_cat){
                         
                             if(data[i].ActivityPrice){
-                                cont= cont + "<h3>"+ data[i].ActivityDescription +"<h3>";
+                                cont= cont + "<h3>"+ data[i].ActivityDescription +"</h3>";
                             }
                             cont = cont + "</div>";
                             $("#capa").append(cont);
