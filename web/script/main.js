@@ -207,40 +207,12 @@ $.get("http://localhost:3000/prices?TranslationID=1", function (data, status) {
     );
   }
 });
-$.get("http://localhost:3000/prices?TranslationID=1", function (data, status) {
-  var sis = data[0];
-  var dotze = data[2];
-  console.log(sis);
-  console.log(dotze);
 
-  $("#tarifesMesos").append(
-    "<div id='preus" +
-      sis +
-      "'>" +
-      "<h3>" +
-      sis.PriceName +
-      "</h3>" +
-      "<p>" +
-      sis.Price +
-      "<p>" +
-      "<p>" +
-      sis.PriceDescription +
-      "<p>" +
-      "</div>"
-  );
-  $("#tarifesMesos").append(
-    "<div id='preus" +
-      dotze +
-      "'>" +
-      "<h3>" +
-      dotze.PriceName +
-      "</h3>" +
-      "<p>" +
-      dotze.Price +
-      "<p>" +
-      "<p>" +
-      dotze.PriceDescription +
-      "<p>" +
-      "</div>"
-  );
-});
+// $.get("http://localhost:3000/prices?TranslationID=1", function (data, status) {
+//   var tarifesNormals = [];
+//   var tarifesMesos = [];
+//   var PriceName = [];
+//   for (let i = 0; i < data.length; i++) {
+//     PriceName.append(i.PriceName);
+//   }
+// });

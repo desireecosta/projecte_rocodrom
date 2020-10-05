@@ -1,0 +1,38 @@
+[
+  {
+    "PriceID": 5,
+    "Price": "210€",
+    "PriceName": "6 mesos",
+    "PriceDescription": "6 mesos per endavant 210€ (35€/mes)"
+  },
+  {
+    "PriceID": 3,
+    "Price": "29€",
+    "PriceName": "Matins",
+    "PriceDescription": "29€/mes"
+  },
+  {
+    "PriceID": 6,
+    "Price": "360€",
+    "PriceName": "12 mesos",
+    "PriceDescription": "12 mesos per endavant 360€ (30€/mes)"
+  },
+  {
+    "PriceID": 4,
+    "Price": "40€",
+    "PriceName": "Tot el dia",
+    "PriceDescription": "40€/mes "
+  },
+  {
+    "PriceID": 2,
+    "Price": "65€",
+    "PriceName": "Bonus 10 entrades",
+    "PriceDescription": "Impersonal, transferible i sense caducitat"
+  },
+  {
+    "PriceID": 1,
+    "Price": "7.5€",
+    "PriceName": "Entrada puntual",
+    "PriceDescription": "Entrada vàlida per un dia"
+  }
+]
